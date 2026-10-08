@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Česky psaný týdenní přehled nejdůležitějších světových, politických, finančních, technologických a vědeckých událostí.">
+  <meta name="color-scheme" content="light dark">
+  <title>Týdenní světový přehled</title>
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('weekly-report-theme');
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      } catch (_) {}
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fff;
+      --text: #0d0d0d;
+      --muted: #6b6b6b;
+      --line: #e5e5e5;
+      --soft: #f7f7f8;
+      --soft-strong: #efefef;
+      --link: #0f6f5c;
+      --button: #fff;
+      --button-hover: #f2f2f2;
+      --shadow: 0 1px 2px rgba(0,0,0,.06);
+      --error-bg: #fff7ed;
+      --error-border: #fdba74;
+    }
+    html[data-theme="dark"] {
+      --bg: #212121;
+      --text: #ececec;
+      --muted: #b4b4b4;
+      --line: #3b3b3b;
+      --soft: #2a2a2a;
+      --soft-strong: #333;
+      --link: #78d6c1;
+      --button: #2a2a2a;
+      --button-hover: #343434;
+      --shadow: 0 1px 2px rgba(0,0,0,.28);
+      --error-bg: #382a1e;
+      --error-border: #9a5b28;
+    }
+    html[data-theme="light"] {
+      --bg: #fff;
+      --text: #0d0d0d;
+      --muted: #6b6b6b;
+      --line: #e5e5e5;
+      --soft: #f7f7f8;
+      --soft-strong: #efefef;
+      --link: #0f6f5c;
+      --button: #fff;
+      --button-hover: #f2f2f2;
+      --shadow: 0 1px 2px rgba(0,0,0,.06);
+      --error-bg: #fff7ed;
+      --error-border: #fdba74;
+    }
+    @media (prefers-color-scheme: dark) {
+      html:not([data-theme]) {
+        --bg: #212121;
+        --text: #ececec;
+        --muted: #b4b4b4;
+        --line: #3b3b3b;
+        --soft: #2a2a2a;
+        --soft-strong: #333;
+        --link: #78d6c1;
+        --button: #2a2a2a;
+        --button-hover: #343434;
+        --shadow: 0 1px 2px rgba(0,0,0,.28);
+        --error-bg: #382a1e;
+        --error-border: #9a5b28;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      transition: background-color .18s ease, color .18s ease;
+    }
+    .page {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+      padding: 42px 0 72px;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+    .updated { color: var(--muted); font-size: 13px; letter-spacing: .01em; }
+    .theme-toggle {
+      flex: 0 0 auto;
+      border: 1px solid var(--line);
+      background: var(--button);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 13px;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+    }
+    .theme-toggle:hover { background: var(--button-hover); }
+    .theme-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    h1,h2,h3,h4,h5,h6 { line-height: 1.25; letter-spacing: -.02em; scroll-margin-top: 24px; }
+    h1 { font-size: clamp(30px,6vw,42px); margin: 0 0 22px; }
+    h2 { font-size: 26px; margin: 52px 0 18px; padding-top: 4px; }
+    h3 { font-size: 21px; margin: 36px 0 14px; }
+    h4 { font-size: 17px; margin: 26px 0 10px; }
+    h5,h6 { font-size: 16px; margin: 24px 0 10px; }
+    p { margin: 0 0 16px; }
+    strong { font-weight: 650; }
+    a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 42px 0; }
+    ul,ol { padding-left: 1.5rem; margin: 0 0 18px; }
+    li { margin: 7px 0; }
+    blockquote { margin: 20px 0; padding: 2px 0 2px 18px; border-left: 3px solid var(--line); color: var(--muted); }
+    table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 20px 0 28px; font-size: 14px; line-height: 1.45; -webkit-overflow-scrolling: touch; }
+    thead { background: var(--soft-strong); }
+    th,td { min-width: 116px; padding: 11px 12px; border: 1px solid var(--line); vertical-align: top; text-align: left; }
+    th:first-child,td:first-child { min-width: 42px; }
+    code { background: var(--soft); padding: 2px 5px; border-radius: 5px; font-size: .92em; }
+    pre { overflow-x: auto; background: var(--soft); padding: 16px; border-radius: 10px; border: 1px solid var(--line); }
+    pre code { padding: 0; background: transparent; }
+    .loading { color: var(--muted); }
+    .error { border: 1px solid var(--error-border); background: var(--error-bg); border-radius: 12px; padding: 16px 18px; }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    @media (max-width:600px) {
+      .page { width: min(100% - 24px,760px); padding-top: 24px; }
+      body { font-size: 15.5px; }
+      h2 { margin-top: 44px; }
+      th,td { padding: 9px 10px; min-width: 108px; }
+    }
+    @media (max-width:480px) { .topbar { align-items: flex-start; flex-direction: column; } }
+    @media print {
+      .page { width: 100%; max-width: 760px; padding: 0; }
+      .theme-toggle { display: none; }
+      a { color: inherit; }
+      table { display: table; overflow: visible; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topbar">
+      <div class="updated" id="updated">Načítání reportu…</div>
+      <button class="theme-toggle" type="button" aria-label="Přepnout barevný motiv" aria-pressed="false">Tmavý režim</button>
+    </div>
+    <article id="report" class="loading" aria-live="polite">Načítání úplného reportu z <code>report.md</code>…</article>
+    <noscript><p class="error">Pro zobrazení formátované stránky je potřeba JavaScript. Úplný report je dostupný v souboru <a href="report.md">report.md</a>.</p></noscript>
+    <footer>Zdrojový text je uložen vedle stránky jako <a href="report.md">report.md</a>. Stránka nepoužívá analytické skripty, cookies ani vložené přístupové údaje.</footer>
+  </main>
+  <script>
+    (() => {
+      const button = document.querySelector('.theme-toggle');
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      const activeTheme = () => document.documentElement.dataset.theme || (media.matches ? 'dark' : 'light');
+      const renderTheme = () => {
+        const dark = activeTheme() === 'dark';
+        button.textContent = dark ? 'Světlý režim' : 'Tmavý režim';
+        button.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      };
+      button.addEventListener('click', () => {
+        const next = activeTheme() === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('weekly-report-theme', next); } catch (_) {}
+        renderTheme();
+      });
+      if (media.addEventListener) media.addEventListener('change', () => { if (!document.documentElement.dataset.theme) renderTheme(); });
+      renderTheme();
+    })();
+
+    (() => {
+      const escapeHtml = value => value
+        .replaceAll('&','&amp;')
+        .replaceAll('<','&lt;')
+        .replaceAll('>','&gt;')
+        .replaceAll('"','&quot;')
+        .replaceAll("'",'&#039;');
+
+      const inline = source => {
+        let s = escapeHtml(source);
+        const codes = [];
+        s = s.replace(/`([^`]+)`/g, (_,code) => {
+          const id = codes.length;
+          codes.push(`<code>${code}</code>`);
+          return `@@CODE${id}@@`;
+        });
+        s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" rel="noopener noreferrer">$1</a>');
+        s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        s = s.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+        s = s.replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+        s = s.replace(/(^|[^_])_([^_\n]+)_/g, '$1<em>$2</em>');
+        s = s.replace(/@@CODE(\d+)@@/g, (_,id) => codes[Number(id)] || '');
+        return s;
+      };
+
+      const cells = line => {
+        let value = line.trim();
+        if (value.startsWith('|')) value = value.slice(1);
+        if (value.endsWith('|')) value = value.slice(0,-1);
+        return value.split('|').map(cell => cell.trim());
+      };
+
+      const markdown = source => {
+        const lines = source.replace(/\r\n?/g,'\n').split('\n');
+        const out = [];
+        let paragraph = [];
+        let list = null;
+        let inCode = false;
+        let codeLang = '';
+        let codeLines = [];
+
+        const flushParagraph = () => {
+          if (!paragraph.length) return;
+          out.push(`<p>${inline(paragraph.join(' '))}</p>`);
+          paragraph = [];
+        };
+        const flushList = () => {
+          if (!list) return;
+          out.push(`<${list.type}>${list.items.map(item => `<li>${inline(item)}</li>`).join('')}</${list.type}>`);
+          list = null;
+        };
+        const closeBlocks = () => { flushParagraph(); flushList(); };
+
+        for (let i=0;i<lines.length;i++) {
+          const line = lines[i];
+          if (inCode) {
+            if (/^```/.test(line)) {
+              out.push(`<pre><code${codeLang ? ` class="language-${escapeHtml(codeLang)}"` : ''}>${escapeHtml(codeLines.join('\n'))}</code></pre>`);
+              inCode = false; codeLang = ''; codeLines = [];
+            } else codeLines.push(line);
+            continue;
+          }
+          const fence = line.match(/^```\s*([\w-]*)/);
+          if (fence) { closeBlocks(); inCode = true; codeLang = fence[1] || ''; continue; }
+          if (!line.trim()) { closeBlocks(); continue; }
+          if (/^\s*(?:---+|___+|\*\*\*+)\s*$/.test(line)) { closeBlocks(); out.push('<hr>'); continue; }
+          const heading = line.match(/^(#{1,6})\s+(.+)$/);
+          if (heading) { closeBlocks(); const level = heading[1].length; out.push(`<h${level}>${inline(heading[2])}</h${level}>`); continue; }
+          if (line.includes('|') && i+1 < lines.length && /^\s*\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(lines[i+1])) {
+            closeBlocks();
+            const headers = cells(line);
+            i += 2;
+            const rows = [];
+            while (i < lines.length && lines[i].includes('|') && lines[i].trim()) { rows.push(cells(lines[i])); i++; }
+            i--;
+            out.push('<table><thead><tr>' + headers.map(h => `<th>${inline(h)}</th>`).join('') + '</tr></thead><tbody>' + rows.map(row => '<tr>' + headers.map((_,n) => `<td>${inline(row[n] || '')}</td>`).join('') + '</tr>').join('') + '</tbody></table>');
+            continue;
+          }
+          const ordered = line.match(/^\s*\d+\.\s+(.+)$/);
+          const unordered = line.match(/^\s*[-+*]\s+(.+)$/);
+          if (ordered || unordered) {
+            flushParagraph();
+            const type = ordered ? 'ol' : 'ul';
+            if (!list || list.type !== type) { flushList(); list = {type,items:[]}; }
+            list.items.push((ordered || unordered)[1]);
+            continue;
+          }
+          const quote = line.match(/^>\s?(.*)$/);
+          if (quote) { closeBlocks(); const quoted = [quote[1]]; while (i+1 < lines.length && /^>\s?/.test(lines[i+1])) quoted.push(lines[++i].replace(/^>\s?/,'')); out.push(`<blockquote><p>${inline(quoted.join(' '))}</p></blockquote>`); continue; }
+          paragraph.push(line.trim());
+        }
+        if (inCode) out.push(`<pre><code>${escapeHtml(codeLines.join('\n'))}</code></pre>`);
+        closeBlocks();
+        return out.join('\n');
+      };
+
+      const report = document.getElementById('report');
+      const updated = document.getElementById('updated');
+      fetch('report.md', {cache:'no-store'})
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return response.text();
+        })
+        .then(source => {
+          const stamp = source.match(/\*\*Uzávěrka informací:\*\*\s*([^\n]+)/);
+          updated.textContent = stamp ? `Aktualizováno: ${stamp[1].trim()}` : 'Aktualizováno podle report.md';
+          report.classList.remove('loading');
+          report.innerHTML = markdown(source);
+          const firstHeading = report.querySelector('h1');
+          if (firstHeading) document.title = firstHeading.textContent;
+        })
+        .catch(error => {
+          report.classList.remove('loading');
+          report.classList.add('error');
+          report.innerHTML = `<strong>Report se nepodařilo načíst.</strong><p>Poslední verze souboru <a href="report.md">report.md</a> zůstává dostupná. Chyba: ${escapeHtml(error.message)}</p>`;
+          updated.textContent = 'Chyba načtení reportu';
+        });
+    })();
+  </script>
+</body>
+</html>
