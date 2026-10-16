@@ -1,0 +1,84 @@
+name: Publish latest reports
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - latest-weekly.txt
+      - latest-daily.txt
+      - reports/weekly/**
+      - reports/daily/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-latest-reports
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate pointers and publish stable files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          publish_weekly=false
+          publish_daily=false
+
+          if [[ -f latest-weekly.txt ]]; then
+            weekly_source="$(tr -d '\r\n' < latest-weekly.txt)"
+            if [[ ! "$weekly_source" =~ ^reports/weekly/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{4}-[0-9]{2}-[0-9]{2}\.md$ ]]; then
+              echo "Invalid weekly pointer: $weekly_source" >&2
+              exit 1
+            fi
+            if [[ ! -f "$weekly_source" ]]; then
+              echo "Weekly source does not exist: $weekly_source" >&2
+              exit 1
+            fi
+            cp "$weekly_source" report.md
+            publish_weekly=true
+          fi
+
+          if [[ -f latest-daily.txt ]]; then
+            daily_source="$(tr -d '\r\n' < latest-daily.txt)"
+            if [[ ! "$daily_source" =~ ^reports/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}\.md$ ]]; then
+              echo "Invalid daily pointer: $daily_source" >&2
+              exit 1
+            fi
+            if [[ ! -f "$daily_source" ]]; then
+              echo "Daily source does not exist: $daily_source" >&2
+              exit 1
+            fi
+            mkdir -p 1d
+            cp "$daily_source" 1d/report.md
+            publish_daily=true
+          fi
+
+          if git diff --quiet -- report.md 1d/report.md; then
+            echo "Stable report files are already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add report.md 1d/report.md
+
+          message="Publish latest reports"
+          if [[ "$publish_weekly" == true && "$publish_daily" == false ]]; then
+            message="Publish latest weekly report"
+          elif [[ "$publish_weekly" == false && "$publish_daily" == true ]]; then
+            message="Publish latest daily report"
+          fi
+
+          git commit -m "$message [skip ci]"
+          git push origin HEAD:main
