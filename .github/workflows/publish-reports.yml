@@ -37,7 +37,7 @@ jobs:
 
           if [[ -f latest-weekly.txt ]]; then
             weekly_source="$(tr -d '\r\n' < latest-weekly.txt)"
-            if [[ ! "$weekly_source" =~ ^reports/weekly/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{4}-[0-9]{2}-[0-9]{2}\.md$ ]]; then
+            if [[ ! "$weekly_source" =~ ^reports/weekly/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{4}-[0-9]{2}-[0-9]{2}(--[0-9]{8}T[0-9]{6})?\.md$ ]]; then
               echo "Invalid weekly pointer: $weekly_source" >&2
               exit 1
             fi
@@ -51,7 +51,7 @@ jobs:
 
           if [[ -f latest-daily.txt ]]; then
             daily_source="$(tr -d '\r\n' < latest-daily.txt)"
-            if [[ ! "$daily_source" =~ ^reports/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}\.md$ ]]; then
+            if [[ ! "$daily_source" =~ ^reports/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}(--[0-9]{8}T[0-9]{6})?\.md$ ]]; then
               echo "Invalid daily pointer: $daily_source" >&2
               exit 1
             fi
