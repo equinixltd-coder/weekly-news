@@ -75,13 +75,22 @@ jobs:
 
               : > "$assembled"
               local part_count=0
+              local expected_part
               local part
               while IFS= read -r part || [[ -n "$part" ]]; do
                 part="${part%$'\r'}"
-                [[ -z "$part" ]] && continue
+                if [[ -z "$part" ]]; then
+                  echo "Empty $kind manifest line" >&2
+                  exit 1
+                fi
 
                 if [[ ! "$part" =~ ^part-[0-9]{3}\.md$ ]]; then
                   echo "Invalid $kind manifest entry: $part" >&2
+                  exit 1
+                fi
+                printf -v expected_part "part-%03d.md" "$((part_count + 1))"
+                if [[ "$part" != "$expected_part" ]]; then
+                  echo "Manifest order mismatch: expected $expected_part, got $part" >&2
                   exit 1
                 fi
                 if [[ ! -f "$source/$part" ]]; then
@@ -122,6 +131,24 @@ jobs:
               if ! grep -q '^<!-- daily-report-source: canonical-markdown;' "$assembled"; then
                 echo "Daily report is missing the canonical source marker" >&2
                 exit 1
+              fi
+              if [[ "$source" =~ $directory_regex ]]; then
+                local suffix="${source#reports/daily/}"
+                local day="${suffix%%--*}"
+                local stamp="${suffix##*--}"
+                local publication_id="daily-${day}--${stamp}"
+                if ! head -n 1 "$assembled" | grep -Fq "publication-id: ${publication_id};"; then
+                  echo "Daily publication ID mismatch: ${publication_id}" >&2
+                  exit 1
+                fi
+                if ! grep -Fq "**Hodnocený den:** ${day}" "$assembled"; then
+                  echo "Daily evaluated date mismatch: ${day}" >&2
+                  exit 1
+                fi
+                if [[ "$size" -lt 3000 ]]; then
+                  echo "Daily report too small for full publication: $size bytes" >&2
+                  exit 1
+                fi
               fi
             fi
 
