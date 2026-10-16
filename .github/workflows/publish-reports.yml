@@ -7,8 +7,6 @@ on:
     paths:
       - latest-weekly.txt
       - latest-daily.txt
-      - reports/weekly/**
-      - reports/daily/**
   workflow_dispatch:
 
 permissions:
@@ -27,7 +25,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate pointers and publish stable files
+      - name: Validate pointers and materialize reports
         shell: bash
         run: |
           set -euo pipefail
@@ -35,43 +33,142 @@ jobs:
           publish_weekly=false
           publish_daily=false
 
+          materialize_report() {
+            local pointer="$1"
+            local kind="$2"
+            local target="$3"
+            local direct_regex="$4"
+            local directory_regex="$5"
+
+            if [[ ! -f "$pointer" ]]; then
+              return 0
+            fi
+
+            local source
+            source="$(tr -d '\r\n' < "$pointer")"
+            if [[ -z "$source" ]]; then
+              echo "Empty $kind pointer: $pointer" >&2
+              exit 1
+            fi
+
+            local assembled
+            assembled="$(mktemp)"
+            local archive_target=""
+
+            if [[ "$source" =~ $direct_regex ]]; then
+              if [[ ! -f "$source" ]]; then
+                echo "$kind source does not exist: $source" >&2
+                exit 1
+              fi
+              cp "$source" "$assembled"
+            elif [[ "$source" =~ $directory_regex ]]; then
+              if [[ ! -d "$source" ]]; then
+                echo "$kind source directory does not exist: $source" >&2
+                exit 1
+              fi
+
+              local manifest="$source/manifest.txt"
+              if [[ ! -f "$manifest" ]]; then
+                echo "$kind manifest does not exist: $manifest" >&2
+                exit 1
+              fi
+
+              : > "$assembled"
+              local part_count=0
+              local part
+              while IFS= read -r part || [[ -n "$part" ]]; do
+                part="${part%$'\r'}"
+                [[ -z "$part" ]] && continue
+
+                if [[ ! "$part" =~ ^part-[0-9]{3}\.md$ ]]; then
+                  echo "Invalid $kind manifest entry: $part" >&2
+                  exit 1
+                fi
+                if [[ ! -f "$source/$part" ]]; then
+                  echo "$kind manifest entry does not exist: $source/$part" >&2
+                  exit 1
+                fi
+
+                cat "$source/$part" >> "$assembled"
+                printf '\n' >> "$assembled"
+                part_count=$((part_count + 1))
+              done < "$manifest"
+
+              if [[ "$part_count" -lt 1 ]]; then
+                echo "$kind manifest contains no parts: $manifest" >&2
+                exit 1
+              fi
+
+              archive_target="$source/report.md"
+              cp "$assembled" "$archive_target"
+            else
+              echo "Invalid $kind pointer: $source" >&2
+              exit 1
+            fi
+
+            local size
+            size="$(wc -c < "$assembled")"
+            if [[ "$size" -lt 200 ]]; then
+              echo "$kind report is unexpectedly small: $size bytes" >&2
+              exit 1
+            fi
+
+            if [[ "$kind" == "weekly" ]]; then
+              if ! grep -q '^<!-- weekly-report-source: canonical-markdown;' "$assembled"; then
+                echo "Weekly report is missing the canonical source marker" >&2
+                exit 1
+              fi
+            else
+              if ! grep -q '^<!-- daily-report-source: canonical-markdown;' "$assembled"; then
+                echo "Daily report is missing the canonical source marker" >&2
+                exit 1
+              fi
+            fi
+
+            if ! grep -q '^# ' "$assembled"; then
+              echo "$kind report is missing a level-one heading" >&2
+              exit 1
+            fi
+
+            mkdir -p "$(dirname "$target")"
+            cp "$assembled" "$target"
+
+            if ! cmp -s "$assembled" "$target"; then
+              echo "$kind target verification failed: $target" >&2
+              exit 1
+            fi
+
+            if [[ -n "$archive_target" ]] && ! cmp -s "$assembled" "$archive_target"; then
+              echo "$kind archive verification failed: $archive_target" >&2
+              exit 1
+            fi
+
+            rm -f "$assembled"
+          }
+
+          weekly_direct='^reports/weekly/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{4}-[0-9]{2}-[0-9]{2}(--[0-9]{8}T[0-9]{6})?\.md$'
+          weekly_directory='^reports/weekly/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{8}T[0-9]{6}$'
+          daily_direct='^reports/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}(--[0-9]{8}T[0-9]{6})?\.md$'
+          daily_directory='^reports/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{8}T[0-9]{6}$'
+
           if [[ -f latest-weekly.txt ]]; then
-            weekly_source="$(tr -d '\r\n' < latest-weekly.txt)"
-            if [[ ! "$weekly_source" =~ ^reports/weekly/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{4}-[0-9]{2}-[0-9]{2}(--[0-9]{8}T[0-9]{6})?\.md$ ]]; then
-              echo "Invalid weekly pointer: $weekly_source" >&2
-              exit 1
-            fi
-            if [[ ! -f "$weekly_source" ]]; then
-              echo "Weekly source does not exist: $weekly_source" >&2
-              exit 1
-            fi
-            cp "$weekly_source" report.md
+            materialize_report latest-weekly.txt weekly report.md "$weekly_direct" "$weekly_directory"
             publish_weekly=true
           fi
 
           if [[ -f latest-daily.txt ]]; then
-            daily_source="$(tr -d '\r\n' < latest-daily.txt)"
-            if [[ ! "$daily_source" =~ ^reports/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}(--[0-9]{8}T[0-9]{6})?\.md$ ]]; then
-              echo "Invalid daily pointer: $daily_source" >&2
-              exit 1
-            fi
-            if [[ ! -f "$daily_source" ]]; then
-              echo "Daily source does not exist: $daily_source" >&2
-              exit 1
-            fi
-            mkdir -p 1d
-            cp "$daily_source" 1d/report.md
+            materialize_report latest-daily.txt daily 1d/report.md "$daily_direct" "$daily_directory"
             publish_daily=true
           fi
 
-          if git diff --quiet -- report.md 1d/report.md; then
-            echo "Stable report files are already current."
+          if git diff --quiet -- report.md 1d/report.md reports/weekly reports/daily; then
+            echo "Stable and archived report files are already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add report.md 1d/report.md
+          git add -A -- report.md 1d/report.md reports/weekly reports/daily
 
           message="Publish latest reports"
           if [[ "$publish_weekly" == true && "$publish_daily" == false ]]; then
@@ -81,4 +178,5 @@ jobs:
           fi
 
           git commit -m "$message [skip ci]"
+          git pull --rebase origin main
           git push origin HEAD:main
