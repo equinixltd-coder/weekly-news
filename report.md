@@ -1,165 +1,112 @@
-<!-- weekly-report-source: canonical-markdown; updated: 2026-10-08T01:02:00+02:00 -->
+<!-- weekly-report-source: canonical-markdown; updated: 2026-10-16T09:34:00+02:00 -->
 
-# Týdenní světový přehled — 1.–7. října 2026
+# Týdenní světový přehled — 4.–10. října 2026
 
-**Období reportu:** 1. října 2026 00:00 – 7. října 2026 23:59 SELČ  
-**Uzávěrka informací:** 8. října 2026 01:02 SELČ
-
-Události zveřejněné po uzávěrce nejsou do hodnocení zahrnuty. Běžný práh pro zařazení je **7/10**. Skóre vyjadřuje možný světový nebo oborový význam, nikoli morální hodnocení.
+**Hodnocené období:** 4. října 2026 00:00 – 10. října 2026 23:59 SELČ.  
+**Uzávěrka aktualizované rešerše:** 16. října 2026, 09:34 SELČ.  
+**Metoda:** Práh významnosti je běžně 7/10. Události po 10. říjnu nejsou počítány mezi nové zprávy hodnoceného týdne; později zveřejněná zpřesnění sobotních výsledků jsou výslovně označena. Kalendář v §12 je retrospektivní výhled pro týden 12.–18. října; část termínů už v době této kontrolní aktualizace proběhla. Údaje byly znovu prověřeny vůči agenturním zdrojům, primárním odborným článkům, zveřejněným tržním řadám a harmonogramu IMF.
 
 ## Pět nejdůležitějších událostí týdne
 
-| # | Událost | Význam | Jistota | Stav ověření | Jednovětý závěr |
+| # | Událost | Význam | Jistota | Ověření | Jednovětý závěr |
 |---:|---|---:|---|---|---|
-| 1 | Rozsáhlý ruský útok na Ukrajinu — viz §1 | **9,4/10** | vysoká pro útok a škody; střední pro úplné operační údaje | Reuters, obrazové důkazy a ukrajinské úřady; část vojenských údajů tvoří tvrzení stran konfliktu | Nejméně 28 hlášených mrtvých, těžké ztráty v Prylukách a zásahy energetické i průmyslové infrastruktury ukázaly pokračující schopnost Ruska provádět rozsáhlé kombinované údery. |
-| 2 | Nejvyšší týdenní počet incidentů u Hormuzu od začátku války a další eskalace v Jemenu — viz §1 | **9,3/10** | střední až vysoká | lodní bezpečnostní zdroje, IMO, oficiální hlášení; část atribuce a bojových výsledků je tvrzením účastníků | Současný tlak na Hormuz a Báb al-Mandab zvyšuje riziko, že regionální konflikt zasáhne dvě nejdůležitější energetické námořní tepny zároveň. |
-| 3 | Dva nezávislé týmy zprovoznily první jaderné hodiny — viz §8 | **9,2/10** | vysoká | **odborně recenzováno**; nezávisle konvergentně předvedeno dvěma týmy | Demonstrace ve Vídni a Pekingu mění jaderné hodiny z dlouhodobého konceptu na fungující experimentální platformu, i když zatím nepřekonávají nejlepší atomové hodiny. |
-| 4 | OpenAI zveřejnila rozsáhlý soubor nových matematických výsledků — viz §7 | **9,0/10** | střední | **publikované preprinty + primární tvrzení instituce nebo autora**; část důkazů **formálně verifikována** | Rozsah souboru může představovat kvalitativní posun AI-asistované matematiky, ale nelze jej zaměňovat za plošnou nezávislou reprodukci nebo odborný konsenzus. |
-| 5 | Flávio Bolsonaro těsně vyhrál první kolo brazilských prezidentských voleb — viz §2 | **9,0/10** | vysoká | téměř úplný oficiální výsledek TSE + agenturní ověření | Výsledek 47,03 % proti 45,16 % pro Lulu obrátil očekávání před druhým kolem 25. října a okamžitě přecenil brazilská aktiva. |
+| 1 | Sobotní útok na letiště v Rijádu — viz §1 | **9,5/10** | vysoká pro škody; střední pro atribuci | Reuters, saúdské úřady, ověřené video | Další eskalace jemenské války přímo zasáhla civilní letectví a nejméně 12 lidí zahynulo. |
+| 2 | Předběžná obchodní shoda EU a Číny — viz §2 | **8,9/10** | vysoká pro rámec; střední pro podmínky | AP a Evropská komise | Dvě významné ekonomiky otevřely cestu k deeskalaci, zatím bez konečného schválení. |
+| 3 | Spectrum deal SpaceX pro Starlink Mobile — viz §6 | **8,8/10** | vysoká pro oznámení; nízká pro praktickou účinnost | Reuters, regulatorní informace | Satelitní síť může významně vstoupit do trhu mobilních komunikací, pokud projde schvalováním a testy. |
+| 4 | Energeticko-dluhový šok podle IMF a propad amerického sentimentu — viz §3 | **8,7/10** | vysoká pro statistiky a výroky; střední pro dopady | IMF, Reuters, University of Michigan | Vysoké energie a náklady financování komplikují světový růst, zatímco americká důvěra klesla na 46,3. |
+| 5 | První recenzovaná přímá evidence stabilního přenosu hmoty od hnědého trpaslíka — viz §9 | **8,4/10** | vysoká pro pozorování; střední pro extrapolaci | Nature Astronomy, MIT | Způsob interakce hvězd může probíhat dlouhodobě, nikoli jen rychlým pohlcením průvodce. |
 
 ## Co se změnilo proti minulému týdnu
 
-| Oblast | Změna rizika nebo významu | Hlavní důvod |
+Srovnávacím základem je předchozí report za 1.–7. října 2026. Okna se překrývají: změny proto vyjadřují nové významné poznatky, nikoli dvě vzájemně oddělená sedmidenní období.
+
+| Oblast | Změna významu/rizika | Důvod |
 |---|---|---|
-| Světové dění / geopolitika | **zvýšil** | Rozsáhlý útok na Ukrajinu, rekordní týdenní počet incidentů u Hormuzu a další boje kolem Jemenu. |
-| Politika | **zvýšil** | Překvapivý výsledek brazilského prvního kola a další eskalace francouzských školních protestů. |
-| Finance a makroekonomika | **zvýšil** | Vyšší inflace eurozóny, slabší americká zaměstnanost, zvýšení sazeb RBI a jestřábí vyznění zápisu Fedu. |
-| Finanční trhy | **nezměnil** | Nejnovější dokončená páteční uzávěrka zůstává 2. října, tedy stejný tržní řez jako v předchozím reportu. |
-| Umělá inteligence | **zvýšil** | Nový výkonný malý model, velký program AI pro biologii, přesun agentů na PC a dobrovolný bezpečnostní rámec USA. |
-| Technologie, ekonomika a společnost | **zvýšil** | První globální doporučení WHO pro dětskou obezitu a závažná, dosud neprokázaná obvinění vůči TikToku. |
-| Matematika | **prudce zvýšil** | Zveřejnění stovek AI-asistovaných rukopisů a části formálních důkazů. |
-| Fyzika | **prudce zvýšil** | Dvě nezávislé funkční demonstrace jaderných hodin. |
-| Astronomie | **zvýšil** | Recenzovaný kandidát planety druhé generace u bílého trpaslíka. |
+| Světové dění | **prudce zvýšil** | Sobotní smrtící útok na letiště v Rijádu. |
+| Politika | **zvýšil** | Předběžné ujednání EU–Čína, české volby. |
+| Finance | **zvýšil** | Varování IMF a slabá americká spotřebitelská důvěra. |
+| Finanční trhy | **zvýšil** | Výrazné vnitrosektorové pohyby při mírném růstu velkých indexů. |
+| AI | **zvýšil** | Google pracovní agent a další regulatorní informace EU. |
+| Technologie a společnost | **prudce zvýšil** | Spektrální akvizice SpaceX otevírá strukturální změnu komunikací. |
+| Matematika | **nezměnil** | Minulý týden popsané AI důkazy se dále nezávisle prověřují. |
+| Fyzika | **zvýšil** | Recenzovaná fyzika chirálních supermřížek. |
+| Astronomie | **zvýšil** | Stabilní přenos hmoty u ZTF J0440+2325. |
 
 ---
 
 ## 1. Světové dění
 
-### Rozsáhlý ruský útok na Ukrajinu — **9,4/10**
+### Opakované útoky na letiště v Rijádu — **9,5/10**
 
-**Co se stalo.** Rusko 7. října zaútočilo na Ukrajinu vlnami střel a dronů. Ukrajinský ministr vnitra uvedl nejméně 28 mrtvých; prezident Volodymyr Zelenskyj hlásil 100 zraněných. Největší ztráty byly podle regionálního gubernátora v Prylukách, kde po zásahu obytného domu zemřelo 20 lidí včetně pěti dětí. Zasaženy byly rovněž průmyslové objekty a energetická infrastruktura. [Reuters](https://www.reuters.com/world/europe/russia-strikes-ukraines-kyiv-fresh-wave-attacks-2026-10-07/)
+**Co se stalo.** V sobotu 10. října při útoku na mezinárodní letiště krále Chálida v Rijádu zahynulo podle saúdských civilních úřadů **nejméně 12 osob** a **309 bylo zraněno**. Šlo již o třetí zásah letiště během týdne. Lety byly odkloněny, provoz zastaven. Reuters ověřil video se zásahy záchranných složek. Húsíové bezprostředně po sobotním zásahu výslovně nepřevzali odpovědnost, byť jejich představitelé lety nad Saúdskou Arábií označovali za rizikové. [Reuters, 10. 10.](https://www.reuters.com/world/middle-east/loud-blast-heard-riyadh-airport-airlines-cancel-more-flights-2026-10-10/)
 
-**Proč je to důležité.** Útok spojil vysoký počet civilních obětí s poškozením ekonomické a energetické infrastruktury. Potvrdil také, že balistické střely zůstávají významným omezením ukrajinské protivzdušné obrany.
+**Proč je to důležité.** Ohrožení civilního letectví posiluje možnost další mezinárodní eskalace, zdražuje dopravu a zvyšuje nejistotu v regionu kritickém pro energii a investice. **Síla důkazů:** vysoká pro civilní následky a omezení provozu; střední pro přesnou atribuci. **Potvrzený fakt:** útok a oběti podle civilních úřadů. **Tvrzení stran:** vojenské cíle, úspěšnost protivzdušné obrany a původ konkrétního projektilu. **Předběžné:** konečná bilance a délka omezení. **Co by závěr změnilo:** nezávislá rekonstrukce útoku a obnovení bezpečného provozu. **Co sledovat:** lety, případné americké zapojení, incidenty u Báb al-Mandabu.
 
-**Síla důkazů.** Vysoká pro samotný útok, místo zásahů a viditelné škody; střední pro úplný počet použitých zbraní, sestřelů a konečnou bilanci obětí.
+### Hormuz: riziko energetických dodávek pokračuje — **8,5/10**
 
-**Potvrzený fakt:** proběhl rozsáhlý kombinovaný útok a došlo k civilním ztrátám. **Tvrzení ukrajinské strany:** Rusko použilo 70 střel a desítky dronů; ukrajinské letectvo uvedlo sestřelení více než 80 % ze 46 proudových dronů. **Tvrzení ruské strany:** cílem byly vojensko-průmyslové objekty. **Předběžné:** konečná bilance, úplný rozsah energetických škod a důvod náhle vyšší hlášené úspěšnosti proti dronům.
+Konflikt kolem Íránu dál ovlivňoval obchodní plavbu, pojištění a ceny ropy. USA a Írán mluvily o možných rozhovorech, ale k sobotní uzávěrce nebylo doloženo obnovení normální přepravy ani závazné příměří. [Reuters, 9. 10.](https://www.reuters.com/business/energy/oil-falls-trump-comments-iran-talks-ease-supply-concerns-2026-10-09/)
 
-**Co by závěr změnilo:** významná revize bilance, důkazy o převážně vojenských cílech nebo naopak další rozsáhlé civilní škody v následujících dnech.
-
-**Co sledovat dál:** četnost dalších kombinovaných úderů, výpadky energie, dostupnost systémů Patriot a dlouhodobou úspěšnost zachycování nových rychlých dronů.
-
-### Hormuz a Jemen: současný tlak na dvě námořní hrdla — **9,3/10**
-
-**Co se stalo.** Reuters 7. října uvedl, že v klouzavém týdnu 28. září–5. října bezpečnostní zdroje evidovaly nejméně 12 útoků, pokusů o útok či případů obtěžování tankerů u Hormuzského průlivu, nejvíce v jediném týdnu od začátku války s Íránem; data IMO obsahovala devět oficiálně evidovaných incidentů. Časové okno částečně předchází tomuto reportu, ale většina sledovaného období se s ním překrývá a zpráva byla zveřejněna 7. října. Dvanáct členů posádky tankeru *On Peace* bylo podle indického ministerstva zahraničí zraněno po zásahu neznámým projektilem. [Reuters – Hormuz](https://www.reuters.com/world/middle-east/attacks-tankers-hormuz-hit-highest-any-week-since-start-iran-war-sources-say-2026-10-07/)
-
-V Jemenu mezitím pokračovaly raketové útoky a boje. Saúdské úřady uvedly, že útoky na letiště v Rijádu a Abhá zabily tři lidi a 36 zranily; jemenské ministerstvo dopravy hlásilo útok na letiště v Adenu. Saúdská koalice současně tvrdila, že zasáhla více než 80 húsíovských míst. [Reuters – Jemen](https://www.reuters.com/world/middle-east/houthis-launch-missiles-yemens-aden-airport-fighting-intensifies-2026-10-07/)
-
-**Proč je to důležité.** Hormuz je zásadní pro vývoz ropy a LNG z Perského zálivu, zatímco Báb al-Mandab ovlivňuje přístup k Rudému moři a Suezskému průplavu. Současné zhoršování bezpečnosti u obou průlivů omezuje možnosti dopravců konflikt jednoduše obejít.
-
-**Síla důkazů.** Střední až vysoká: IMO a několik profesionálních bezpečnostních zdrojů potvrzují růst incidentů, ale přesná atribuce je často nejasná. Údaje o zásazích v Jemenu pocházejí převážně od účastníků konfliktu.
-
-**Potvrzený fakt:** počet hlášených námořních incidentů prudce vzrostl a došlo ke zranění posádky tankeru. **Tvrzení jedné strany:** saúdské a húsíovské popisy cílů, zásahů a vojenských škod. **Předběžné:** míra koordinace mezi jednotlivými útoky a jejich dopad na skutečné exportní objemy.
-
-**Co by závěr změnilo:** trvalý pokles incidentů, ověřené příměří nebo stabilní návrat pojištěné komerční plavby by riziko snížily; uzavření části průlivu či další oběti na tankerech by jej výrazně zvýšily.
-
-**Co sledovat dál:** počet tranzitů, pojistné sazby, oficiální záznamy IMO, útoky u Báb al-Mandabu a případná jednání o námořní deeskalaci.
+**Význam:** Hormuz je zásadním dopravním hrdlem energetického obchodu. **Důkazy:** vysoké pro zveřejněná diplomatická vyjádření a ceny, nízké pro neveřejný skutečný pokrok jednání. **Potvrzené:** veřejné postoje a přetrvávající riziko. **Tvrzení stran:** blízkost diplomatického řešení. **Předběžné:** čas znovuotevření. **Co by závěr změnilo:** data rejdařů, IMO a pojišťoven potvrzující obnovení provozu. **Sledovat:** tranzitní objemy a podepsané dokumenty.
 
 ---
 
 ## 2. Politika
 
-### Brazílie: překvapivé vedení Flávia Bolsonara před druhým kolem — **9,0/10**
+### Předběžný obchodní rámec EU–Čína — **8,9/10**
 
-**Co se stalo.** Po sečtení 99,99 % hlasů získal Flávio Bolsonaro 56 104 268 hlasů, tedy **47,03 %**, zatímco Luiz Inácio Lula da Silva 53 876 617 hlasů, tedy **45,16 %**. Druhé kolo je stanoveno na **25. října**. [Brazilský Nejvyšší volební soud](https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/flavio-bolsonaro-e-lula-vao-disputar-o-2o-turno-para-a-presidencia-da-republica) [Reuters](https://www.reuters.com/world/americas/brazilians-head-polls-high-stakes-polarized-election-2026-10-04/)
+**Co se stalo.** Po dvoudenních jednáních 8.–9. října oznámil komisař Maroš Šefčovič základní porozumění týkající se elektromobilů, vzácných zemin a čínského přístupu pro některé evropské výrobky. Podle komisaře by některá opatření mohla významně omezit dovoz čínských elektrických a plug-in hybridních aut. Finální právní text nebyl schválen všemi členskými státy. [AP, 9. 10.](https://apnews.com/article/china-trade-eu-exports-54c9c71e85f92dc0003780fc53f0b250) [Evropská komise](https://audiovisual.ec.europa.eu/en/stories/M-010052)
 
-**Proč je to důležité.** Brazílie je největší ekonomikou Latinské Ameriky a významným producentem komodit. Výsledek obrátil předvolební očekávání, podle nichž měl Lula přibližně tříbodový náskok, a změnil pravděpodobné scénáře fiskální, environmentální i zahraniční politiky.
+**Význam:** dodavatelské řetězce, automobilový průmysl, vzácné zeminy, evropsko-čínský obchod. **Síla důkazů:** vysoká pro prohlášení, střední pro konkrétní parametry. **Potvrzené:** politický rámec. **Tvrzení komisaře:** možné snížení dovozu čínských elektromobilů až o 50 %. **Předběžné:** konečné podmínky, národní schválení a ekonomické dopady. **Co by závěr změnilo:** odmítnutí dohody nebo změna podmínek. **Sledovat:** jednání členských států a reakci Pekingu.
 
-**Síla důkazů.** Vysoká; volební čísla pocházejí z oficiálního systému TSE.
+### Česko: senátní a komunální volby — **8,0/10**
 
-**Potvrzený fakt:** pořadí a téměř konečné podíly hlasů. **Tvrzení jedné strany:** kampaně obou kandidátů prezentují výsledek jako mandát pro vlastní program. **Předběžné:** přenos hlasů poražených kandidátů, dopad koaličních doporučení a výsledek druhého kola.
+**Co se stalo.** Volby proběhly 9.–10. října. Podle definitivního sčítání zveřejněného až v neděli 11. října jako upřesnění sobotního výsledku získalo mandát v prvním kole **pět kandidátů, žádný z ANO**; ve **22 obvodech** se uskuteční druhé kolo. ANO má 13 postupujících kandidátů, širší opozice 26. [AP, 11. 10. — zpřesnění sobotního hlasování](https://apnews.com/article/23ec077da1a39d8a4973fc10b3cfa1b5)
 
-**Co by závěr změnilo:** pouze mimořádná právní nebo technická revize prvního kola; pro politický význam budou rozhodující nové aliance a průzkumy.
+**Význam:** Senát ovlivňuje ústavní legislativu a jmenování soudců. **Důkazy:** vysoké, oficiální sčítání. **Potvrzené:** počty postupujících a mandátů. **Předběžné:** výsledné složení Senátu. **Co by závěr změnilo:** volební stížnost nebo přepočet. **Sledovat:** druhé kolo 16.–17. října.
 
-**Co sledovat dál:** veřejná doporučení poražených kandidátů, regionální přesuny podpory, volební dezinformace a průzkumy před 25. říjnem.
+### Brazílie před druhým kolem — **7,8/10**
 
-### Francie: další eskalace školních protestů a omezení policejní taktiky — **8,3/10**
-
-**Co se stalo.** Protesty a blokády zasáhly podle Reuters přibližně 3 700 středních škol. Ministerstvo vnitra uvádělo kolem 6 100 zatčených, většinou nezletilých; ministerstvo spravedlnosti více než 1 800 stíhaných. Francie následně pozastavila používání některých omračujících granátů poté, co patnáctiletý demonstrant přišel o ruku; policejní inspekce vyšetřovala 18 incidentů. Souhrnné statistiky jsou údaji francouzských úřadů, nikoli nezávislým auditem. [Reuters – protesty](https://www.reuters.com/world/europe/france-braces-day-school-blockades-street-protests-2026-10-06/) [Reuters – granáty](https://www.reuters.com/world/europe/france-suspends-use-stun-grenades-police-student-protests-2026-10-07/)
-
-**Proč je to důležité.** Protest se změnil z lokálního školského konfliktu v celostátní problém veřejného pořádku a legitimity policejních zásahů, a to během širšího sporu o fiskální konsolidaci.
-
-**Síla důkazů.** Vysoká pro rozsah protestů a rozhodnutí pozastavit granáty; střední pro agregované údaje o zatčeních, zraněních a odpovědnosti za násilí.
-
-**Potvrzený fakt:** rozsáhlé blokády, tisíce zatčení podle úřadů a změna policejní praxe. **Tvrzení vlády:** část násilí podněcují radikální politické skupiny. **Tvrzení opozice:** vláda používá nepřiměřenou sílu. **Předběžné:** zda protesty udrží celostátní intenzitu a ovlivní rozpočtové hlasování.
-
-**Co by závěr změnilo:** rychlé uklidnění škol a dohoda o policejních pravidlech; naopak další vážná zranění či pád vlády by dopad zvýšily.
-
-**Co sledovat dál:** účast na dalších demonstracích, závěry policejní inspekce, opravy škol a dopad na parlamentní rozpočet.
+Nový průzkum Ipespe zveřejněný 10. října odhadl **52,7 % platných hlasů pro Flávia Bolsonara a 47,3 % pro Lulu**. **Jde o odhad preferencí, nikoli oficiální výsledek.** [Folha de S.Paulo / Ipespe](https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-tem-527-dos-votos-validos-no-2o-turno-contra-473-de-lula-diz-ipespe.shtml) Význam: politický a fiskální směr největší latinskoamerické ekonomiky. Doložena je existence průzkumu, jeho predikce je nejistá. Vývoj mohou změnit mobilizace a koalice. Sledovat další průzkumy do 25. října.
 
 ---
 
 ## 3. Finance a makroekonomika
 
-### Eurozóna: inflace 3,8 %; USA: pouze 29 tisíc nových pracovních míst — **8,8/10**
+### IMF: energetický, fiskální a AI investiční šok — **8,7/10**
 
-**Co se stalo.** Předběžný odhad Eurostatu zvýšil zářijovou inflaci eurozóny z **3,2 % na 3,8 % meziročně**. Energie zdražovala o 18,8 %, služby o 3,2 % a jádrová inflace bez energií, potravin, alkoholu a tabáku činila 2,5 %. Jde o **flash estimate**, který může být při finálním zveřejnění revidován. [Eurostat](https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap)
+**Co se stalo.** Ředitelka IMF Kristalina Georgievová 7. října varovala před souběhem vysokých cen energií, rekordního veřejného dluhu a investiční expanze AI. Podle IMF veřejný dluh může před rokem 2030 přesáhnout 100 % světového HDP. Nová prognóza světového růstu teprve přijde v následujícím týdnu. [Reuters / IMF, 7. 10.](https://www.reuters.com/world/asia-pacific/imf-chief-warns-energy-shock-growing-debt-ai-risks-threaten-global-growth-2026-10-07/)
 
-Ve Spojených státech mezitím v září vzniklo pouze **29 000 pracovních míst mimo zemědělství**, nezaměstnanost činila 4,2 %. Reuters uváděl konsenzus ekonomů kolem 90 000 míst a také souhrnnou revizi předchozích dvou měsíců směrem dolů o 60 000 míst. [BLS](https://www.bls.gov/news.release/archives/empsit_10022026.htm) [Reuters](https://www.reuters.com/business/wall-st-futures-gain-yields-oil-prices-ease-ahead-jobs-report-2026-10-02/)
+**Význam:** tlak na sazby, rozpočty a investice. **Síla důkazů:** vysoká pro výrok a existující IMF odhady, střední pro budoucí vývoj. **Potvrzené:** stanovisko IMF. **Tvrzení instituce:** možné produktivní přínosy AI i systémové riziko přecenění. **Předběžné:** nové prognózy. **Co by závěr změnilo:** normalizace energií, inflace nebo vyšší doložená produktivita. **Sledovat:** IMF World Economic Outlook 13. října.
 
-Jednoměsíční payroll data je však nutné interpretovat opatrně: BLS u změny celkové zaměstnanosti zveřejňuje široký 90% interval statistické nejistoty, zhruba **±122 tisíc míst**. Rozdíl mezi 29 tisíci a očekáváním proto představuje významné tržní překvapení, ale sám o sobě není dostatečný důkaz prudkého strukturálního kolapsu zaměstnanosti.
+### USA: spotřebitelský sentiment 46,3 — **8,1/10**
 
-**Proč je to důležité.** ECB čelí silnějšímu energetickému inflačnímu šoku, zatímco Fed současně dostává první přesvědčivější signál slábnoucí poptávky po práci. Směr měnové politiky se tak může mezi USA a eurozónou začít více rozcházet.
+Předběžný index University of Michigan klesl v říjnu na **46,3** ze zářijových **48,1**; index současných podmínek činil **44,7**. Jednoroční inflační očekávání dosáhla **4,7 %**, dlouhodobá **3,5 %**. [Reuters, 9. 10.](https://www.reuters.com/business/us-consumer-sentiment-deteriorates-further-october-2026-10-09/)
 
-**Síla důkazů.** Vysoká; primární oficiální statistiky.
-
-**Potvrzený fakt:** 3,8% předběžná inflace eurozóny a +29 tisíc amerických payrolls. **Co není potvrzeno:** že USA vstupují do recese nebo že evropskou inflaci způsobila výhradně geopolitika. Energie je významnou příčinou evropského růstu cen, nikoli jedinou.
-
-**Co by závěr změnilo:** velké revize payrolls, prudké zlepšení říjnového trhu práce nebo rychlé zlevnění energií.
-
-**Co sledovat dál:** další americké žádosti o podporu v nezaměstnanosti, mzdovou dynamiku, finální HICP a komunikaci Fedu a ECB.
-
-### Indie zvýšila sazbu; zápis Fedu ponechal otevřené další utažení — **8,2/10**
-
-**Co se stalo.** Reserve Bank of India 7. října jednomyslně zvýšila repo sazbu o 25 bazických bodů na **5,50 %** a změnila postoj na „calibrated tightening“. Pro fiskální rok 2026/27 projektuje růst HDP 7,1 % a CPI inflaci 5,2 %. RBI výslovně uvedla, že v blízké době jsou snížení sazeb mimo hru. [RBI](https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63742)
-
-Zápis ze zářijového FOMC potvrdil jednomyslné zvýšení americké sazby na 3,75–4,00 % a ukázal, že většina účastníků považovala další zvýšení do konce roku za pravděpodobné, avšak závislé na datech. [Federal Reserve](https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm)
-
-**Proč je to důležité.** Utažení v rychle rostoucí Indii a pokračující jestřábí riziko v USA potvrzují, že energetické a širší cenové tlaky mohou prodloužit globální období vysokých úroků.
-
-**Síla důkazů.** Velmi vysoká pro rozhodnutí a zápis; střední pro budoucí trajektorii sazeb.
-
-**Potvrzený fakt:** zvýšení RBI, změna postoje a obsah zveřejněného zápisu Fedu. **Tvrzení institucí:** centrální banky přisuzují část rizika energii a rozšiřování cenových tlaků. **Předběžné:** načasování dalších kroků.
-
-**Co by závěr změnilo:** prudké ochlazení poptávky, nižší jádrová inflace nebo rychlá normalizace energetických cen.
-
-**Co sledovat dál:** americká inflace, indická jádrová inflace, ceny ropy a komunikace před dalšími zasedáními.
+**Význam:** slabší důvěra při stále silných cenových tlacích zvyšuje nejistotu Fedu. **Síla důkazů:** vysoká pro výsledky průzkumu; slabší pro výklad reálné spotřeby. **Potvrzené:** zveřejněné předběžné hodnoty. **Tvrzení analytiků:** vysoké ceny energií a životních nákladů jsou významným vysvětlením. **Předběžné:** konečná říjnová data a reálný dopad na útraty. **Co by závěr změnilo:** revize, růst mezd a zlevnění energií. **Sledovat:** CPI 14. října, PPI 15. října.
 
 ---
 
 ## 4. Finanční trhy
 
-Nejnovější **dokončená páteční uzávěrka** před uzávěrkou reportu je **2. října 2026**, srovnávaná s **25. zářím 2026**. Proto je tabulka stejným tržním řezem jako v předchozím reportu; události z 5.–7. října se zde záměrně nepromítají. Procentní změny jsou vypočteny z konzistentních uzávěrek a zaokrouhleny.
+**Uzávěrka:** pátek **9. 10. 2026** proti pátku **2. 10. 2026**. Procentní změny jsou dopočítány z uvedených uzávěrek. U výnosu dluhopisu jsou klíčové bazické body; u BTC uzávěrka dne v UTC.
 
-| Aktivum | 2. 10. 2026 | Změna od 25. 9. | Od začátku roku | Hlavní pravděpodobné vysvětlení |
+| Aktivum | 9. 10. | Změna od 2. 10. | YTD | Hlavní pravděpodobné vysvětlení |
 |---|---:|---:|---:|---|
-| **S&P 500** | **7 722,72** | **−0,27 %** | **+12,81 %** | Týdenní pokles byl malý navzdory prudkému růstu výnosů; páteční rally po slabších payrolls značnou část předchozích ztrát smazala. |
-| **Nasdaq Composite** | **27 190,86** | **+0,45 %** | **+16,99 %** | AI a polovodičové tituly zůstaly silné a slabší zaměstnanost snížila očekávání dalšího rychlého zvýšení sazeb. |
-| **STOXX Europe 600** | **631,35** | **−1,14 %** | **+6,61 %** | Pravděpodobné vysvětlení: globální růst výnosů, vysoké energetické náklady a zvláštní tlak na francouzská aktiva. |
-| **US 10Y Treasury** | **5,277 %** | **+9,6 bb; +1,85 % relativně** | **+111,4 bb; +26,76 % relativně** | Trh pohyb spojoval s inflačními riziky, energií, fiskální nabídkou dluhu a vyšší rovnovážnou poptávkou po kapitálu; jedno jediné spouštěcí vysvětlení doloženo není. Během týdne výnos dosáhl 5,342 %, maxima od roku 2002. |
-| **DXY** | **101,93** | **+0,95 %** | **+3,70 %** | Pravděpodobné vysvětlení: vysoké americké výnosy a relativně jestřábí ocenění Fedu; v pátek dolar po slabých payrolls část zisků odevzdal. |
-| **EUR/USD** | **1,1250** | **−1,10 %** | **−4,23 %** | Trh pohyb spojoval hlavně s rozšířením úrokového diferenciálu ve prospěch dolaru a evropským fiskálním rizikem; páteční americká data pokles eura částečně korigovala. |
-| **Brent, front-month settlement** | **102,25 USD/barel** | **−1,98 %** | **+68,04 %** | Obnova části blízkovýchodních exportů a koordinované uvolnění evropských/IEA nouzových zásob zmírnily bezprostřední nedostatek, přestože geopolitické riziko zůstalo vysoké. |
-| **Zlato, COMEX front-month settlement** | **4 133,70 USD/oz** | **−3,59 %** | **−4,44 %** | Reuters spojoval pokles především se silnějším dolarem a vysokými reálnými i nominálními výnosy; bezpečnostní poptávka pokles jen částečně tlumila. |
-| **Bitcoin – UTC denní close** | **84 497,21 USD** | **+0,55 %** | **−3,44 %** | Příčina není spolehlivě izolována; pravděpodobné vysvětlení je páteční návrat rizikového apetitu po slabších payrolls a nižších očekáváních říjnového zvýšení sazeb. |
+| **S&P 500** | **7 811,54** | **+1,15 %** | **+14,1 %** | Páteční oživení převážilo čtvrteční výprodej technologických titulů. |
+| **Nasdaq Composite** | **27 366,17** | **+0,64 %** | **+17,7 %** | AI akcie se po výprodeji částečně zotavily. |
+| **STOXX Europe 600** | **631,55** | **+0,03 %** proti 631,35 | **+6,65 %** (z koncové uzávěrky 2025: 592,19) | Praktická stagnace; různé datové konvence mohou uvádět odlišnou týdenní změnu. |
+| **US Treasury 10Y, výnos** | **5,244 %** | **−3,3 bb** (−0,63 % relativně) | **+108,1 bb** podle základu minulého reportu | Po pondělním maximu 5,311 % výnos klesl, zůstal však nad 5 %. |
+| **DXY** | **102,21** | **+0,27 %** | **přibližně +4,0 %** | Vysoké americké výnosy a relativní měnová politika. |
+| **EUR/USD** | **1,1202** | **−0,45 %** proti 1,1253 ze stejné řady | **přibližně −4,6 %** (rekonstrukce ze základu minulého vydání) | Pravděpodobně úrokový diferenciál a evropská rizika. |
+| **Brent – prosincový futures 2026** | **104,72 USD/barel** | **+2,42 %** proti 102,25 USD | **přibližně +72,1 %** (rekonstrukce ze základu minulého vydání) | Hormuz a narušení těžby v Mexickém zálivu, částečně tlumené diplomatickými výroky. |
+| **Zlato – COMEX prosincový futures 2026** | **4 216,30 USD/oz** | **+1,30 %** proti 4 162,30 USD stejného kontraktu | **neověřeno v jednotné kontraktní řadě** | Bezpečnostní poptávka a změny amerických výnosů. |
+| **Bitcoin, BTC/USD – UTC close** | **82 546,32 USD** | **−2,31 %** proti 84 497,21 USD | **přibližně −5,7 %** (rekonstrukce ze základu minulého vydání) | Kolísání rizikové averze; jeden spouštěč neprokázán. |
 
-**Datová poznámka.** Reuters potvrzuje páteční close S&P 500 a Nasdaq i jejich týdenní změny; historická řada amerického desetiletého výnosu uvádí 5,277 % dne 2. října a 5,181 % dne 25. září. [Reuters – americké akcie](https://www.reuters.com/business/wall-st-futures-gain-yields-oil-prices-ease-ahead-jobs-report-2026-10-02/) [Historická data US 10Y](https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data)
+**Zdroje dat:** [Agentura AP – uzávěrky a YTD amerických akciových indexů](https://apnews.com/article/dafbd0c4037ee10e2a9e305f3cfa8e70); [S&P, Nasdaq, US10Y, DXY a Brent – týdenní uzávěrky](https://www.portfolio-terminal.com/blog/stock-market-week-in-review-october-9-2026); [správce STOXX, index](https://stoxx.com/index/sxxp/); [konec roku STOXX, 592,19](https://www.finanzen.net/index/stoxx_europe_600/hochtief); [historie EUR/USD](https://www.poundsterlinglive.com/history/EUR-USD-2026); [Reuters, páteční Brent settlement](https://www.reuters.com/business/energy/oil-falls-trump-comments-iran-talks-ease-supply-concerns-2026-10-09/); [COMEX GC=F](https://finance.yahoo.com/quote/GC%3DF/history/); [BTC-USD](https://finance.yahoo.com/quote/BTC-USD/history/).
 
-**Brent — rozdíl datových konvencí.** Tabulka používá stejnou kontinuální front-month řadu pro oba pátky, z níž vychází −1,98 %. Agenturní text Reuters uváděl za týden +0,11 %, pravděpodobně kvůli odlišné kontraktní nebo rolovací konvenci; údaj proto nelze bez sjednocení série přímo zaměnit s výpočtem pátek proti pátku.
+**Korekce konvence zlata:** předchozí report za 2. října uváděl front-month 4 133,70 USD, ale pro nový souvislý výpočet je použit **tentýž prosincový kontrakt za oba pátky**: 4 162,30 a 4 216,30 USD. YTD není bez stejné kontraktní řady spolehlivě doloženo. Přibližné YTD u některých dalších aktiv využívají základ minulého reportu, nikoliv nezávisle ověřené nové roční časové řady.
 
-### Hlavní tržní závěr
-
-Nejdůležitějším tržním jevem nebyl pohyb akcií, ale **přecenění ceny dlouhodobého kapitálu**. Americký desetiletý výnos dosáhl 5,342 %, jeho nejvyšší úrovně od začátku roku 2002; prudce rostly rovněž náklady financování Francie, Británie a Japonska. Korelaci s inflací, energií, deficity a AI-investičním boomem nelze automaticky převést na jedinou kauzální příčinu.
+**Tržní závěr:** americké široké indexy rostly, ale jednotlivá odvětví prudce reagovala na nové technologické informace. Pohyb cen je korelace s událostmi, nikoliv automatický důkaz jediné kauzální příčiny.
 
 ---
 
@@ -167,141 +114,79 @@ Nejdůležitějším tržním jevem nebyl pohyb akcií, ale **přecenění ceny 
 
 ### Schopnosti modelů
 
-#### Claude Haiku 5.5 — **8,0/10**
+**Žádný nově zveřejněný a nezávisle reprodukovaný benchmarkový průlom nad 7/10 nebyl spolehlivě doložen.** Výsledky modelů z překryvu předchozího reportu neoznačuji za nové. Skóre hlášená firmou nejsou nezávislá měření.
 
-Anthropic představil Claude Haiku 5.5 s kontextem až jeden milion tokenů. Firma uvádí mimo jiné **72,4 bodu na OSWorld**, **45,9 % na Humanity’s Last Exam bez nástrojů** a **57,4 % s nástroji** a **39,2 % na Terminal-Bench**. [Anthropic](https://www.anthropic.com/claude-haiku-5-5)
+### Produkty a nasazení: Google Cloud Gemini pracovní agent — **7,8/10**
 
-**Benchmarky:** čísla zveřejněná Anthropicem jsou **výsledky výrobce**. Artificial Analysis zveřejnila vlastní nezávislé měření Intelligence Indexu a rychlosti modelu; to však **není nezávislá reprodukce celého benchmarkového souboru Anthropicu**. [Artificial Analysis](https://artificialanalysis.ai/models/claude-haiku-5-5-high)
+Google 8. října představil pracovního agenta propojujícího nástroje a systémy včetně Workspace, Microsoft 365 a Slacku. Specializované varianty pro finance a právo jsou ve zkušebním režimu. [Reuters](https://www.reuters.com/business/google-cloud-introduces-gemini-agent-work-ai-race-heats-up-2026-10-08/)
 
-**Potvrzený fakt:** model existuje a je komerčně zpřístupněn. **Primární tvrzení výrobce:** benchmarkové výsledky a relativní pozice vůči větším modelům. **Předběžné:** praktická výkonnost v dlouhých produkčních úlohách.
+**Význam:** přesun od odpovídání k dokončování podnikových úloh. **Důkazy:** vysoké pro produktové oznámení, nízké pro skutečnou produktivitu a bezpečnost. **Potvrzené:** oznámené integrace. **Tvrzení výrobce:** spolehlivost a schopnosti. **Předběžné:** výsledky v produkci. **Co by závěr změnilo:** nezávislé testy a incidenty. **Sledovat:** správu oprávnění, chyby a návratnost.
 
-### Produkty a nasazení
+### Ekonomika a financování: nejisté metriky AI tržeb — **8,0/10**
 
-#### Microsoft přesouvá část AI agentů a kódování přímo na PC — **7,5/10**
+Mediální zpráva o rozdílných očekáváních anualizovaných tržeb OpenAI byla 8. října spojována s propadem indexu polovodičů SOX o **3,39 %**. Interní odhad tržeb není ověřená účetní závěrka a rozdílné definice výnosů mohou vést k různým číslům. [Tržní souhrn](https://www.portfolio-terminal.com/blog/stock-market-week-in-review-october-9-2026) [Axios – definice ARR](https://www.axios.com/2026/10/08/openai-50-billion-arr-anthropic-revenue-accounting)
 
-Microsoft představil model pro kódování běžící lokálně na výkonných počítačích a Microsoft Execution Containers, které mají omezit přístup agentů k datům a nepovoleným úlohám. Anthropic, OpenAI a Nvidia mají podle Microsoftu kontejnery využívat. Nový Surface Laptop Ultra s Nvidia RTX Spark má stát 2 599 až 5 899 USD. [Reuters](https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/)
-
-**Potvrzený fakt:** produkty a oznámená integrace. **Výsledek výrobce:** tvrzení o schopnostech a bezpečnosti kontejnerů. **Nezávislá reprodukce:** k uzávěrce není doložena. **Předběžné:** zda lokální AI sníží náklady a rizika v běžném podnikovém provozu; vysoká cena hardwaru může nasazení omezit.
-
-### Ekonomika a financování
-
-#### Program Virtual Biology Initiative za 1,8 miliardy USD — **8,2/10**
-
-Americká vláda, Google DeepMind, Isomorphic Labs, Meta a iniciativa financovaná Chan Zuckerberg Initiative oznámily souhrnný program za přibližně **1,8 miliardy USD** pro velké biologické datové soubory a AI modely. Meta, Google DeepMind a Isomorphic mají investovat 300 milionů USD, americké ministerstvo energetiky více než 500 milionů během pěti let a Biohub 500 milionů; NIH má koordinovat dříve financované datové zdroje. [Reuters](https://www.reuters.com/business/healthcare-pharmaceuticals/us-government-google-join-zuckerberg-backed-biohub-18-billion-push-ai-biology-2026-10-07/)
-
-**Proč je to důležité:** program spojuje veřejné laboratoře, soukromý kapitál a standardizaci biologických dat v měřítku, které může ovlivnit vývoj léčiv a základní biologii.
-
-**Potvrzený fakt:** oznámené závazky a účast institucí. **Primární tvrzení účastníků:** očekávané zrychlení biologického výzkumu. **Předběžné:** první dataset během přibližně roku je plán, nikoli dosažený výsledek.
+**Význam:** vysoká citlivost valuací AI infrastruktury. **Důkazy:** vysoké pro cenu akcií, nízké až střední pro interní projekce. **Potvrzené:** tržní reakce. **Předběžné:** srovnatelnost finančních ukazatelů. **Co by závěr změnilo:** auditované výnosy a jednoznačná definice ARR. **Sledovat:** monetizaci a kapitálové výdaje.
 
 ### Čipy, datacentra a energie
 
-#### AirTrunk přidá miliardu USD do japonského AI kampusu — **7,4/10**
-
-Blackstone-backed AirTrunk oznámil další investici **1 miliardy USD** do více než 300MW kampusu v Inzai, včetně kapalinového chlazení pro AI workloady; firma současně získala zelený úvěr ve stejné výši. [Reuters](https://www.reuters.com/world/asia-pacific/blackstone-backed-airtrunk-invest-1-billion-japan-data-centre-campus-2026-10-07/)
-
-**Potvrzený fakt:** financování a investiční plán. **Tvrzení společnosti:** areál může být prvním japonským kampusem s velkým AI nasazením. **Předběžné:** dokončená kapacita, obsazenost a skutečná energetická efektivita.
+**V období nebyla doložena další samostatná nová událost nad 7/10** mimo již popsané investiční a energetické riziko (§3) a tržní reakce na AI (§5).
 
 ### Bezpečnost a incidenty
 
-**V období 1.–7. října nebyla identifikována nová samostatná, potvrzená bezpečnostní událost AI s významem alespoň 7/10.** Microsoft Execution Containers jsou preventivní produktové opatření a jsou popsány výše, nikoli nový incident.
+**Nebyl identifikován nový, nezávisle potvrzený incident AI s významem alespoň 7/10.** Vyjádření politiků o riziku agentů nejsou samo o sobě důkazem nového incidentu.
 
-### Regulace a geopolitika
+### Regulace a geopolitika: EU AI Act — **7,9/10**
 
-#### USA staví na dobrovolných závazcích šesti AI firem — **8,4/10**
+Komisařka Henna Virkkunen 9. října uvedla, že AI Act podle jejího názoru pokrývá rizika pokročilých autonomních agentů. Komise již dříve požádala více než 30 firem o informace k bezpečnosti a nyní posuzuje odpovědi. [Reuters](https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/)
 
-Administrativa prezidenta Donalda Trumpa prosazuje dobrovolné bezpečnostní závazky, ke kterým se přihlásily Nvidia, SpaceX, OpenAI, Anthropic, Meta a Google. Prezident rámec označil za „morálně závazný“, ale nebyly uvedeny konkrétní sankce za nesplnění. [Reuters](https://www.reuters.com/legal/litigation/public-fears-ai-grow-trump-digs-voluntary-safeguards-2026-10-03/)
-
-**Proč je to důležité:** jde o volbu regulatorního modelu pro největší AI trh — koordinaci bez bezprostředně vymahatelných povinností.
-
-**Potvrzený fakt:** firmy se k rámci připojily. **Tvrzení vlády a firem:** dobrovolná spolupráce může být rychlejší než závazná regulace. **Předběžné:** skutečné plnění, auditovatelnost a schopnost rámce reagovat na incidenty.
-
-**Co by závěr změnilo:** zveřejnění měřitelných povinností, nezávislých auditů nebo sankcí; bez nich zůstává účinnost nejistá.
+**Důkazy:** vysoké pro existenci regulatorních kroků. **Tvrzení instituce:** účinnost rámce. **Předběžné:** skutečná vymahatelnost vůči novým incidentům. **Co by závěr změnilo:** audity a konkrétní rozhodnutí regulátora. **Sledovat:** metodiky, vyšetřování a přezkum.
 
 ---
 
 ## 6. Technologické, ekonomické a společenské trendy
 
-### WHO vydala první globální doporučení k dětské a adolescentní obezitě — **8,0/10**
+### SpaceX a spektrum pro Starlink Mobile — **8,8/10**
 
-WHO 7. října vydala první globální směrnici pro prevenci a léčbu obezity u dětí a dospívajících. Organizace odhaduje, že v roce 2024 žilo s obezitou 170 milionů lidí ve věku 5–19 let a prevalence od roku 1990 vzrostla přibližně z 2 % na 8 %. WHO silně doporučuje strukturované programy kombinující stravu, pohyb a behaviorální podporu. U dětí do devíti let nedoporučuje léky, chirurgii ani zařízení; ve věku 10–19 let mají léky přicházet v úvahu až po neúspěchu odborně vedené multimodální intervence. [WHO](https://www.who.int/micronesia/news/detail-global/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity)
+**Co se stalo.** SpaceX 8. října oznámila dohodu s Grain Management o převzetí celostátního portfolia nízkofrekvenčního spektra kolem **800 MHz**. Částka kolem **8 mld. USD** pochází z médií, nikoliv ze zveřejněné definitivní smluvní ceny. Transakce vyžaduje souhlas FCC. FCC současně schválila žádost pro druhou generaci konstelace až 15 000 satelitů. [Reuters – transakce](https://www.reuters.com/business/media-telecom/spacex-acquire-spectrum-that-enables-starlink-mobile-services-2026-10-08/) [Reuters – technický význam spektra](https://www.reuters.com/business/what-is-low-band-spectrum-that-spacex-acquired-starlink-mobile-2026-10-09/)
 
-**Síla důkazů:** vysoká pro vydání směrnice; jednotlivá doporučení vycházejí z hodnocení dostupných studií, nikoli z jedné nové klinické studie.
+**Význam:** nízké pásmo může pomoci signálu pronikat překážkami a usnadnit propojení běžných telefonů přes satelity. **Síla důkazů:** vysoká pro oznámení, nízká pro budoucí kvalitu a kapacitu služby. **Potvrzené:** dohoda a regulatorní krok. **Tvrzení firem a analytiků:** konkurenceschopnost vůči tradičním operátorům. **Předběžné:** schválení, cena, technické limity, pokrytí interiérů. **Co by závěr změnilo:** zamítnutí FCC nebo neúspěšné nezávislé testy. **Sledovat:** regulatorní harmonogram a reálné měření.
 
-**Potvrzený fakt:** obsah a rozsah doporučení. **Předběžné:** míra implementace, dostupnost péče a dlouhodobé populační výsledky.
+### Nobelovy ceny za vědecké obory, oznámené 5.–7. října — **7,8/10**
 
-**Co sledovat dál:** přijetí národními zdravotními systémy, úhrady léčby, dostupnost multidisciplinární péče a data o bezpečnosti léčiv u dospívajících.
+**Co se stalo.** Nobelovu cenu za fyziologii a lékařství za vývoj optogenetiky obdrželi Karl Deisseroth, Peter Hegemann a Georg Nagel (5. října); fyzikální cenu za přínos observatoři IceCube a kosmickým neutrinům Francis Halzen (6. října); chemickou cenu za průkopnickou práci s molekulární chiralitou Henri B. Kagan a Kenso Soai (7. října). [AP – laureáti roku 2026](https://apnews.com/article/99918d839a742def7ae4b135fc88b5) [Nature – Nobelova cena za fyziku, 6. 10.](https://www.nature.com/articles/d41586-026-03092-1) [Oficiální termíny vyhlašování](https://www.nobelprize.org/prizes/about/prize-announcement-dates/)
 
-### New York obvinil TikTok z „placebo“ testu bezpečnostní funkce — **8,2/10**
-
-Odpečetěná žaloba státu New York tvrdí, že TikTok při experimentu poskytl tisícům uživatelů včetně dospívajících a dětí nefunkční verzi bezpečnostní funkce „Algo Refresh“, aniž by věděli, že jsou v kontrolní skupině. TikTok označil postup za běžné produktové testování a obvinění obecně odmítá. Jde o **tvrzení v probíhajícím soudním řízení**, nikoli o soudně potvrzený fakt. [Reuters](https://www.reuters.com/world/china/tiktok-gave-teens-children-placebo-safety-feature-experiment-new-york-alleges-2026-10-07/)
-
-**Proč je to důležité:** případ může vymezit hranici mezi běžným A/B testováním a experimentováním s ochrannými mechanismy u nezletilých.
-
-**Síla důkazů:** střední; existence žaloby a popis experimentu jsou doloženy, právní a skutkové závěry zatím nikoli.
-
-**Potvrzený fakt:** žaloba byla podána a TikTok obvinění odmítá. **Tvrzení žalobce:** kontrolní skupina dostala „placebo“ bezpečnostní funkci. **Předběžné:** rozsah újmy, odpovědnost firmy a zákonnost experimentu.
-
-**Co by závěr změnilo:** interní záznamy, expertní posudky a soudní rozhodnutí.
-
-### Nobelovy ceny za vědu ocenily starší průlomové práce — **8,0/10**
-
-Nobelovu cenu za fyziologii nebo lékařství získali Karl Deisseroth, Peter Hegemann a Georg Nagel za objevy vedoucí k optogenetice. Nobelovu cenu za fyziku získal Francis Halzen za rozhodující příspěvky k observatoři IceCube a cenu za chemii Henri B. Kagan a Kenso Soai za nelineární efekty a autokatalýzu v asymetrické organické syntéze. Jde o oficiálně potvrzená ocenění, nikoli o nové experimentální objevy tohoto týdne, proto je nezařazuji do žebříčku §10. [Nobel Prize – přehled](https://www.nobelprize.org/)
+**Proč je to důležité.** Jde o veřejné potvrzení mimořádného historického významu těchto metod, nikoliv o nové experimentální objevy uskutečněné v hodnoceném týdnu. **Síla důkazů a potvrzený fakt:** vysoká, vyhlášení cen je oficiální; přínos konkrétních laureátů vyplývá z dlouhodobé recenzované literatury. **Tvrzení institucí:** význam práce oceněné komisemi. **Předběžné:** možný budoucí dopad na léčbu, detekci částic a syntézu. **Co by závěr změnilo:** změna historické interpretace při dalších výzkumech, nikoli samotné existence ocenění. **Sledovat:** nové aplikace; do žebříčku nových objevů v §10 tyto starší výsledky neřadím.
 
 ---
 
 ## 7. Matematika
 
-### OpenAI zveřejnila stovky AI-asistovaných matematických rukopisů — **9,0/10**
+### Nezávislý audit AI-asistovaných matematických rukopisů — **7,8/10**
 
-**Co se stalo.** OpenAI 6. října zveřejnila rozsáhlý repozitář nových matematických výsledků vytvořených interním frontier modelem. Firma uvádí, že zahrnuje široké spektrum otevřených problémů, revizní protokoly, citace a formální artefakty; mnoho důkazů bylo převedeno do Lean. Mediální soupisy uváděly 722 rukopisů v 372 rodinách výsledků. [OpenAI](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+Publikace rozsáhlého souboru důkazů OpenAI proběhla 6. října a byla již hlavní událostí předchozího reportu; nejde tedy o nový dodatečný průlom. Neexistuje plošné nezávislé ověření novosti a správnosti všech rukopisů. [OpenAI – primární zpráva a rukopisy](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
-**Proč je to důležité.** Nejde pouze o další benchmark: tvrzení jsou zveřejněna ve formě matematických rukopisů, takže mohou být jednotlivě kontrolována, opravována nebo vyvracena. Pokud významná část obstojí, půjde o jeden z největších skoků v praktickém využití AI pro výzkumnou matematiku.
-
-**Stupeň ověření:** **publikované preprinty + primární tvrzení instituce nebo autora**. U části výsledků navíc **formálně verifikováno** v Lean. K uzávěrce však neexistuje plošná nezávislá reprodukce ani odborné recenzování celého souboru.
-
-**Formální verifikace a shoda s veřejným tvrzením.** Lean ověřuje, zda formalizovaný důkaz plyne z formalizovaných předpokladů. To samo o sobě nezaručuje, že každá formalizovaná věta přesně odpovídá neformálnímu titulku, původnímu otevřenému problému nebo všem zamýšleným podmínkám. OpenAI tvrdí, že artefakty tuto shodu zachovávají, ale úplný nezávislý audit stovek položek nebyl k uzávěrce zveřejněn.
-
-**Potvrzený fakt:** rukopisy a část Lean artefaktů jsou veřejné. **Tvrzení autora:** rozsah a novost výsledků a míra autonomie modelu. **Předběžné:** podíl skutečně nových, správných a významných vět po odborném přezkumu.
-
-**Co by závěr změnilo:** systematické chyby v překladu do formálního jazyka, znovuobjevení známých výsledků, mezery v neformalizovaných částech nebo naopak nezávislé publikace a reprodukce většího počtu výsledků.
-
-**Co sledovat dál:** veřejné audity jednotlivých vět, přijetí do odborných časopisů, nezávislé Lean kompilace a vydání samotného modelu.
+**Stupeň důkazů:** publikované preprinty a tvrzení instituce; u části výsledků **formální verifikace** podle autorů. Formální verifikace ukazuje, že formalizovaná věta plyne z formálních předpokladů, **nikoliv automaticky**, že se přesně rovná širšímu veřejně popisovanému problému nebo že nebyla známa. **Shoda formalizace s popisem:** není plošně nezávisle auditována. **Co by závěr změnilo:** systematické vady či naopak nezávisle reprodukované významné věty. **Co sledovat:** recenze, opravy, veřejné Lean artefakty. **Nový další matematický objev nad 7/10 nebyl doložen.**
 
 ---
 
 ## 8. Fyzika bez astronomie
 
-### První fungující jaderné hodiny — **9,2/10**
+### Chirální supermřížka a topologický antiferomagnetismus — **8,1/10**
 
-**Co se stalo.** Dva nezávislé týmy ve Vídni a Pekingu zveřejnily v časopise *Nature* funkční demonstrace hodin založených na nízkoenergetickém jaderném přechodu thoria‑229. Týmy použily odlišné experimentální přístupy. [Reuters](https://www.reuters.com/science/scientists-vienna-beijing-create-worlds-first-nuclear-clocks-2026-10-07/)
+**Co se stalo.** Studie v časopise *Nature* zveřejněná **7. října** popsala chirální supermřížku v materiálu **UOTe** a neobvyklý spinově rozštěpený topologický antiferomagnetický stav. [Dinh a kol., Nature, DOI 10.1038/s41586-026-11073-7](https://www.nature.com/articles/s41586-026-11073-7)
 
-**Proč je to důležité.** Jaderný přechod je vůči části vnějších elektromagnetických poruch lépe odstíněn než elektronové přechody běžných atomových hodin. Dlouhodobě může umožnit přesnější testy změn fundamentálních konstant, relativity a velmi citlivou geodézii.
-
-**Stupeň ověření:** **odborně recenzováno** a **nezávisle konvergentně předvedeno** dvěma týmy. Nejde o doslovnou reprodukci stejného aparátu, ale o dvě odlišné funkční realizace téhož základního principu.
-
-**Potvrzený fakt:** obě zařízení fungovala jako jaderné frekvenční reference. **Předběžné:** praktické překonání nejlepších atomových hodin; současné prototypy je zatím přesností nepřevyšují.
-
-**Co by závěr změnilo:** problémy s dlouhodobou stabilitou, nemožnost mezi-laboratorního porovnání nebo nečekané systematické posuny.
-
-**Co sledovat dál:** přímé porovnání obou systémů, nejistotu frekvence, provozní stabilitu a první testy fundamentální fyziky.
+**Význam:** nová cesta pro spintronické materiály, nikoliv již existující komerční paměťový čip. **Stupeň ověření:** **odborně recenzováno**, dostupná recenzní historie. **Potvrzené:** publikovaná experimentální data a jejich analýza. **Tvrzení autorů:** konkrétní mechanismus. **Předběžné:** přenositelnost na další materiály, spolehlivá zařízení. **Nezávislá reprodukce:** dosud nedoložena. **Co by závěr změnilo:** nezávislé magnetické nebo spektroskopické měření s jiným vysvětlením. **Sledovat:** další laboratoře a funkční spintroniku.
 
 ---
 
 ## 9. Astronomie
 
-### Kandidát planety druhé generace u bílého trpaslíka — **8,2/10**
+### Hnědý trpaslík stabilně předává hmotu malé hvězdě — **8,4/10**
 
-**Co se stalo.** Recenzovaná studie v *Nature Astronomy* popsala periodický signál v materiálu, který bílý trpaslík HS 0209+0832 akreuje. Signál má periodu **4,399 ± 0,026 dne** a amplitudu **0,120 ± 0,018 %**. Autoři jej interpretují jako kandidáta obří planety vzniklé nebo znovu vytvořené po fázi červeného obra, ve vzdálenosti přibližně 0,04 AU. Alternativou je kometární nebo prachový ohon či jiný zdroj periodické absorpce. [Nature Astronomy](https://www.nature.com/articles/s41550-026-02983-7)
+**Co se stalo.** *Nature Astronomy* 5. října zveřejnil pozorování systému **ZTF J0440+2325** ve vzdálenosti kolem **300 světelných let**. Hnědý trpaslík předává materiál červenému trpaslíku; systém má oběžnou periodu **86,65 minuty**. Autoři uvedli i druhého, méně jistého kandidáta. [Nature Astronomy](https://www.nature.com/articles/s41550-026-02992-6) [MIT – původní autoři](https://news.mit.edu/2026/astronomers-catch-star-slowly-snacking-on-brown-dwarf-1005)
 
-**Proč je to důležité.** Potvrzená planeta druhé generace by ukázala, že planetární tělesa mohou vznikat z materiálu uvolněného při pozdní evoluci hvězdy, případně že staré planetární jádro může znovu nabrat obálku.
-
-**Stupeň ověření:** **odborně recenzováno**. Nezávislá reprodukce nebo přímá detekce planety k uzávěrce neexistuje.
-
-**Potvrzený fakt:** periodický signál a neobvyklé akreční složení. **Tvrzení autorů:** nejlepší interpretací je evaporující obří planeta. **Předběžné:** samotná existence a hmotnost planety i mechanismus jejího vzniku.
-
-**Co by závěr změnilo:** další spektroskopie může prokázat hvězdnou variabilitu, prachový útvar bez planety nebo jiný zdroj signálu.
-
-**Co sledovat dál:** opakování periody, infračervený přebytek, změny akrečních čar a nezávislá pozorování jinými dalekohledy.
+**Význam:** první přímo doložený případ stabilního přenosu hmoty z takového substelárního průvodce. **Stupeň ověření:** **odborně recenzováno**; nezávislé potvrzení jinou skupinou zatím není doloženo. **Potvrzené:** pozorované projevy a perioda. **Modelová interpretace:** je možná dlouhá evoluce až miliardy let, což **nebylo přímo tak dlouho sledováno**. **Předběžné:** druhý kandidát a přesná akreční rychlost. **Co by závěr změnilo:** jiná spektrální interpretace nebo nová měření. **Sledovat:** spektroskopii a druhý systém.
 
 ---
 
@@ -309,41 +194,43 @@ Nobelovu cenu za fyziologii nebo lékařství získali Karl Deisseroth, Peter He
 
 | Pořadí | Výsledek | Stav ověření | Důvod významu |
 |---:|---|---|---|
-| 1 | Jaderné hodiny — viz §8 | **odborně recenzováno; nezávisle konvergentně předvedeno** | Dvě funkční realizace převádějí dlouho očekávanou technologii do experimentální praxe. |
-| 2 | AI-asistované matematické výsledky — viz §7 | **publikované preprinty; část formálně verifikována; nezávislý plošný audit chybí** | Potenciálně mimořádný rozsah nových matematických tvrzení a důkazů. |
-| 3 | Kandidát planety druhé generace — viz §9 | **odborně recenzováno; nereprodukováno** | Nabízí novou cestu vzniku planet po zániku původního planetárního systému. |
+| 1 | Stabilní přenos hmoty ZTF J0440+2325, §9 | **odborně recenzováno**, nezávislá reprodukce dosud nedoložena | Doložen nový režim interakce těsných hvězdných dvojic. |
+| 2 | Topologický antiferomagnetismus v chirální supermřížce, §8 | **odborně recenzováno**, nezávislá reprodukce dosud nedoložena | Materiálový mechanismus s možným významem pro spintroniku. |
 
-Žebříček uměle nerozšiřuji na pět položek. Nobelovy ceny oceňují starší objevy, a proto zde nejsou započítány jako nové výsledky týdne.
+Žebříček nevyplňuji staršími výsledky ani Nobelovými cenami za historické objevy.
 
 ---
 
 ## 11. Největší anomálie
 
-Anomálií zde rozumím doloženou odchylku od historického, statistického, modelového nebo běžně očekávaného chování. Zařazení neznamená, že je vysvětlení exotické nebo že byl prokázán nový mechanismus.
+Anomálie znamená doloženou odchylku od historického, statistického, modelového nebo běžného očekávání; neznamená exotické vysvětlení.
 
-| Kategorie | Anomálie | Vůči čemu je anomální | Nejpravděpodobnější běžné vysvětlení |
+| Kategorie | Anomálie | Oproti čemu | Pravděpodobné běžné vysvětlení |
 |---|---|---|---|
-| **Vědecká** | Kandidát obří planety v těsné blízkosti bílého trpaslíka — viz §9 | Původní velká planeta by fázi červeného obra v této vzdálenosti pravděpodobně nepřežila. | Druhogenerační vznik z vyvrženého materiálu, staré jádro s nově nabranou obálkou nebo prachový/kometární útvar bez planety. |
-| **Ekonomická** | Pouze 29 tisíc amerických payrolls proti konsenzu kolem 90 tisíc a revize předchozích měsíců −60 tisíc — viz §3 | Výsledek byl výrazně pod očekáváním a pod dvanáctiměsíčním průměrem. | „Low-hire, low-fire“ ochlazení trhu práce, sektorové přesuny a běžná statistická nejistota s pozdějšími revizemi. |
-| **Tržní** | Brazilský Bovespa po prvním kole vzrostl o 7,7 %, nejvíce za den od března 2020, a real přibližně o 4,1 % | Jednodenní pohyb byl mimo běžné rozmezí velkého akciového indexu a měny. | Prudké přecenění očekávané fiskální a regulační politiky po nečekaném výsledku; nejde o důkaz budoucího ekonomického výkonu. [Reuters](https://www.reuters.com/world/americas/brazil-markets-set-rally-bolsonaro-leads-first-round-vote-2026-10-05/) |
-| **Geopolitická** | Nejméně 12 hlášených incidentů u Hormuzu v týdnu 28. 9.–5. 10. — viz §1 | Nejvyšší týdenní četnost od začátku současné války. | Koordinovaný nátlak, větší exportní provoz poskytující více cílů a rozdíly mezi rychlým hlášením bezpečnostních firem a pomalejším ověřováním IMO. |
-| **Technologická a AI** | Tvrzený „placebo“ test bezpečnostní funkce TikToku u tisíců uživatelů včetně nezletilých — viz §6 | Uživatelé běžně očekávají, že aktivovaná bezpečnostní funkce skutečně funguje, nikoli že jsou nevědomou kontrolní skupinou. | Běžné A/B testování spojené s nedostatečnou správou rizik a komunikací; skutkový stav zatím není soudně potvrzen a TikTok obvinění odmítá. |
+| Vědecká | Stabilní akrece od hnědého trpaslíka, §9 | Očekávání rychlého pohlcení v těsné dvojici | U určitých hmotností a oběžných konfigurací může být přenos stabilní. |
+| Ekonomická | Americký sentiment 46,3 a současné podmínky 44,7, §3 | Velmi slabá úroveň dlouhodobého průzkumu | Drahé energie, životní náklady a nejistota; průzkum sám neprokazuje recesi. |
+| Tržní | SOX −3,39 % dne 8. října, §5 | Prudká reakce na nejednoznačné finanční projekce AI | Citlivé valuace, vysoká očekávání a krátkodobé přecenění. |
+| Geopolitická | Třetí útok za týden na letiště v Rijádu s nejméně 12 sobotními oběťmi, §1 | Závažné narušení civilního leteckého uzlu | Eskalace jemenské války a nedokonalá protivzdušná obrana; konkrétní atribuce nejasná. |
+| Technologická a AI | Prudké přecenění telekomunikačních firem po dohodě SpaceX, §6 | Velký tržní efekt před schválením a širokým nasazením služby | Očekávaná budoucí konkurence, nikoli současně prokázaná technologická převaha. |
+
+Zdroje: [trhy 5.–9. října](https://www.portfolio-terminal.com/blog/stock-market-week-in-review-october-9-2026), [letiště Rijád](https://www.reuters.com/world/middle-east/loud-blast-heard-riyadh-airport-airlines-cancel-more-flights-2026-10-10/).
 
 ---
 
-## 12. Co sledovat příští týden
+## 12. Co sledovat příští týden (12.–18. října 2026)
 
-1. **8. října ve 13:00 SELČ — Nobelova cena za literaturu.**
-2. **9. října v 11:00 SELČ — Nobelova cena za mír; 12. října v 11:45 SELČ — cena za ekonomické vědy.** [Oficiální harmonogram](https://www.nobelprize.org/prizes/about/prize-announcement-dates/)
-3. **9.–10. října — komunální volby v České republice a první kolo voleb do jedné třetiny Senátu.** [Ministerstvo vnitra](https://mv.gov.cz/volby-a-referenda-zakladni/volby-do-senatu-a-zastupitelstev-obci-2026-2)
-4. **12.–18. října — výroční zasedání IMF a Světové banky v Bangkoku.** Sledovat globální růstový výhled, dluhové riziko, energetickou inflaci a doporučení k finanční stabilitě. [IMF](https://www.imf.org/en/meetings/2026/annual)
-5. **14. října ve 14:30 SELČ — americký CPI za září.** Údaj bude zásadní pro posouzení, zda slabší zaměstnanost převáží nad inflačním rizikem. [BLS kalendář](https://www.bls.gov/schedule/2026/10_sched.htm)
-6. **8.–14. října — Hormuz a Jemen.** Sledovat počet oficiálně ověřených incidentů, zranění posádek, pojistné a případné útoky u Báb al-Mandabu.
-7. **8.–14. října — Ukrajina.** Rozhodující budou další kombinované útoky, energetické škody, zachycování proudových dronů a dostupnost systémů Patriot.
-8. **8.–14. října — Brazílie a Francie.** V Brazílii sledovat aliance a průzkumy před druhým kolem 25. října; ve Francii další školní protesty, policejní pravidla a rozpočtovou stabilitu.
+1. **12.–18. října:** výroční zasedání IMF a Světové banky v Bangkoku. [Oficiální program IMF](https://www.imf.org/en/meetings/2026/annual/schedule).
+2. **13. října:** zveřejnění IMF *World Economic Outlook* a *Global Financial Stability Report* — nové prognózy růstu a finančních rizik. [IMF](https://www.imf.org/en/meetings/2026/annual/schedule).
+3. **14. října, 14:30 SELČ:** americký CPI za září, včetně jádrového ukazatele. [BLS](https://www.bls.gov/schedule/2026/home.htm).
+4. **15. října, 14:30 SELČ:** americký PPI za září. [BLS](https://www.bls.gov/schedule/2026/home.htm).
+5. **16.–17. října:** druhé kolo českých senátních voleb, 22 obvodů. [AP](https://apnews.com/article/23ec077da1a39d8a4973fc10b3cfa1b5).
+6. **12.–18. října:** saúdská letiště, Hormuz a Jemen; jde o monitorované scénáře, nikoliv o předem naplánované události. [Reuters](https://www.reuters.com/world/middle-east/loud-blast-heard-riyadh-airport-airlines-cancel-more-flights-2026-10-10/).
+7. **12.–18. října:** brazilské průzkumy a politické aliance před druhým kolem 25. října. [Folha / Ipespe](https://www1.folha.uol.com.br/poder/2026/10/flavio-bolsonaro-tem-527-dos-votos-validos-no-2o-turno-contra-473-de-lula-diz-ipespe.shtml).
+8. **12.–18. října:** výsledky velkých amerických bank; přesné termíny jednotlivých bank nebyly v tomto vydání nezávisle ověřeny. [Tržní výhled](https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-apple-stock-aapl-delta-earnings/).
 
 ---
 
 ## Metodická poznámka
 
-Skóre významnosti je analytický odhad. „Potvrzený fakt“ označuje část doloženou primárními daty nebo více věrohodnými zdroji; „tvrzení jedné strany“ výslovně odděluje informace účastníků konfliktu, politických aktérů či firem. U tržních pohybů jsou uváděna pravděpodobná vysvětlení, nikoli automaticky prokázaná kauzalita.
+Významnost je analytické skóre, nikoliv morální hodnocení. Potvrzené údaje jsou odděleny od vyjádření zainteresovaných aktérů, preprintů, modelových interpretací a spekulací. Tržní změny odvozuji z konzistentních pátků; nedostupné YTD nepředstírám. Všechny citace jsou standardní veřejné Markdown HTTPS odkazy, aby text mohl být přímo zpracován agentem bez parsování HTML.
+
