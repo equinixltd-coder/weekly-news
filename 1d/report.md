@@ -1,9 +1,10 @@
-<!-- daily-report-source: canonical-markdown; initialized: 2026-10-16 -->
+<!-- daily-report-source: canonical-markdown; updated: 2026-10-16T10:15:00+02:00 -->
 
-# Denní světový přehled
+# Denní světový přehled — inicializace publikačního mechanismu
 
-Denní vydání je připraveno. První automatický report bude publikován po následujícím naplánovaném běhu.
+**Hodnocené období:** inicializační kontrola publikačního mechanismu.  
+**Stav:** GitHub konektor vytvořil neměnný zdrojový soubor; workflow jej má publikovat do `1d/report.md`.
 
-**Rozsah:** předchozí dokončený kalendářní den v časovém pásmu Europe/Prague.
+Tento dočasný inicializační obsah bude nahrazen prvním pravidelným denním reportem.
 
-Aktuální týdenní přehled je dostupný na [hlavní stránce](../).
+Aktuální týdenní přehled je dostupný na [hlavní stránce](../../).
