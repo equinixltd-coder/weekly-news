@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: publish-latest-reports
@@ -46,6 +47,10 @@ jobs:
 
             local source
             source="$(tr -d '\r\n' < "$pointer")"
+            if [[ "$(wc -l < "$pointer")" -ne 1 ]] || [[ "$(tail -c 1 "$pointer" | od -An -tu1 | tr -d '[:space:]')" != "10" ]]; then
+              echo "$kind pointer must consist of exactly one newline-terminated line" >&2
+              exit 1
+            fi
             if [[ -z "$source" ]]; then
               echo "Empty $kind pointer: $pointer" >&2
               exit 1
@@ -93,13 +98,18 @@ jobs:
                   echo "Manifest order mismatch: expected $expected_part, got $part" >&2
                   exit 1
                 fi
-                if [[ ! -f "$source/$part" ]]; then
+                if [[ ! -s "$source/$part" ]]; then
                   echo "$kind manifest entry does not exist: $source/$part" >&2
                   exit 1
                 fi
 
                 cat "$source/$part" >> "$assembled"
-                printf '\n' >> "$assembled"
+                # Previously published archives included a separator newline after
+                # every part. Keep that legacy format stable. New publications are
+                # lossless concatenations; chunk boundaries carry their own newlines.
+                if [[ -f "$source/report.md" ]]; then
+                  printf '\n' >> "$assembled"
+                fi
                 part_count=$((part_count + 1))
               done < "$manifest"
 
@@ -141,10 +151,21 @@ jobs:
                   echo "Daily publication ID mismatch: ${publication_id}" >&2
                   exit 1
                 fi
-                if ! grep -Fq "**Hodnocený den:** ${day}" "$assembled"; then
+                # Both ISO (2026-10-16) and Czech (16. 10. 2026)
+                # date representations are valid.
+                local czech_day
+                czech_day="$(date -d "$day" '+%-d. %-m. %Y')"
+                if ! grep -Fq "**Hodnocený den:** ${day}" "$assembled" &&
+                   ! grep -Fq "**Hodnocený den:** ${czech_day}" "$assembled"; then
                   echo "Daily evaluated date mismatch: ${day}" >&2
                   exit 1
                 fi
+                for section in '## 1. ' '## 2. ' '## 3. ' ' '## 4. ' '## 5. ' '## 6. ' '## 7. ' '## 8. ' '## 9. ' '## 10. ' '## 11. ' '## 12. '; do
+                  if ! grep -Fq "$section" "$assembled"; then
+                    echo "Daily report is missing required section: $section" >&2
+                    exit 1
+                  fi
+                done
                 if [[ "$size" -lt 3000 ]]; then
                   echo "Daily report too small for full publication: $size bytes" >&2
                   exit 1
@@ -207,3 +228,83 @@ jobs:
           git commit -m "$message [skip ci]"
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Verify Pages build, deploy and public daily report
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [[ ! -f latest-daily.txt ]]; then
+            echo "No daily pointer; skipping daily public E2E validation."
+            exit 0
+          fi
+          source="$(tr -d '\r\n' < latest-daily.txt)"
+          if [[ ! "$source" =~ ^reports/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}--[0-9]{8}T[0-9]{6}$ ]]; then
+            echo "Daily E2E requires a dated manifest directory; current pointer: $source"
+            exit 1
+          fi
+          suffix="${source#reports/daily/}"
+          publication_id="daily-${suffix}"
+          day="${suffix%%--*}"
+          archive="$source/report.md"
+          test -s "$archive"
+          test -s 1d/report.md
+          cmp -s "$archive" 1d/report.md || { echo "Archive and stable report differ"; exit 1; }
+          archive_sha="$(git hash-object "$archive")"
+          stable_sha="$(git hash-object 1d/report.md)"
+          [[ "$archive_sha" == "$stable_sha" ]] || { echo "Git blob SHA mismatch"; exit 1; }
+          grep -Fq "publication-id: $publication_id;" 1d/report.md
+          grep -q '^# Denní světový přehled' 1d/report.md
+          grep -Fq "$day" 1d/report.md || grep -Fq "$(date -d "$day" '+%-d. %-m. %Y')" 1d/report.md
+          grep -Eq '^## (12\. )?Co sledovat' 1d/report.md
+
+          deployed_sha="$(git rev-parse HEAD)"
+          echo "Checking Pages build/deploy for commit $deployed_sha and $publication_id"
+          report_url="https://equinixltd-coder.github.io/weekly-news/1d/report.md?publication=$publication_id"
+          page_url="https://equinixltd-coder.github.io/weekly-news/1d/?publication=$publication_id"
+          ready=false
+          for attempt in $(seq 1 48); do
+            runs="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs?head_sha=$deployed_sha&per_page=50")"
+            pages_run="$(jq -r '[.workflow_runs[] | select(.name=="pages build and deployment")] | sort_by(.run_number) | last | .id // empty' <<<"$runs")"
+            if [[ -n "$pages_run" ]]; then
+              run_info="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$pages_run")"
+              status="$(jq -r '.status' <<<"$run_info")"
+              conclusion="$(jq -r '.conclusion // "pending"' <<<"$run_info")"
+              echo "Pages run $pages_run: $status / $conclusion (attempt $attempt)"
+              if [[ "$status" == "completed" && "$conclusion" != "success" ]]; then
+                echo "GitHub Pages run failed: $conclusion (run $pages_run)" >&2
+                exit 1
+              fi
+              if [[ "$status" == "completed" && "$conclusion" == "success" ]]; then
+                jobs="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$pages_run/jobs?per_page=100")"
+                if ! jq -e '[.jobs[] | select(.name=="build" or .name=="deploy")] | length == 2' <<<"$jobs" >/dev/null ||
+                   ! jq -e '[.jobs[] | select(.name=="build" or .name=="deploy") | select(.status=="completed" and .conclusion=="success")] | length == 2' <<<"$jobs" >/dev/null; then
+                  echo "Pages build or deploy job did not succeed (run $pages_run)" >&2
+                  exit 1
+                fi
+                if curl -fsSL --max-time 20 -H 'Cache-Control: no-cache' "$report_url" -o /tmp/public-daily-report.md &&
+                   curl -fsSL --max-time 20 -H 'Cache-Control: no-cache' "$page_url" -o /tmp/public-daily-index.html &&
+                   grep -Fq "publication-id: $publication_id;" /tmp/public-daily-report.md &&
+                   grep -q '^# Denní světový přehled' /tmp/public-daily-report.md &&
+                   grep -Eq '^## (12\. )?Co sledovat' /tmp/public-daily-report.md &&
+                   grep -Fq "$day" /tmp/public-daily-report.md &&
+                   grep -Fq "fetch('report.md?" /tmp/public-daily-index.html &&
+                   grep -Fq "cache:'no-store'" /tmp/public-daily-index.html; then
+                  if cmp -s 1d/report.md /tmp/public-daily-report.md; then
+                    echo "E2E verified: Pages run $pages_run, blob SHA $archive_sha, publication $publication_id"
+                    ready=true
+                    break
+                  fi
+                  echo "Public report has correct ID but differs from the repository file."
+                fi
+              fi
+            else
+              echo "Pages run for $deployed_sha has not appeared yet (attempt $attempt)."
+            fi
+            sleep 15
+          done
+          if [[ "$ready" != true ]]; then
+            echo "E2E failed: Pages deployment/public content not confirmed for $publication_id" >&2
+            exit 1
+          fi
