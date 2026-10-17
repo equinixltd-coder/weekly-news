@@ -7,6 +7,7 @@ on:
     paths:
       - latest-weekly.txt
       - latest-daily.txt
+      - .github/workflows/publish-reports.yml
   workflow_dispatch:
 
 permissions:
