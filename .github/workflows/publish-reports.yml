@@ -158,7 +158,7 @@ jobs:
                 local month_names=(ledna února března dubna května června července srpna září října listopadu prosince)
                 czech_day="$(date -d "$day" '+%-d. %-m. %Y')"
                 month_idx=$((10#${day:5:2} - 1))
-                czech_long="$(date -d "$day" '+%-d. ')\${month_names[$month_idx]}\ ${day:0:4}"
+                czech_long="$(date -d "$day" '+%-d. ')${month_names[$month_idx]} ${day:0:4}"
                 if ! grep -Fq "**Hodnocený den:** ${day}" "$assembled" &&
                    ! grep -Fq "**Hodnocený den:** ${czech_day}" "$assembled" &&
                    ! (grep -F '**Hodnocený den:**' "$assembled" | grep -Fq "$czech_long"); then
