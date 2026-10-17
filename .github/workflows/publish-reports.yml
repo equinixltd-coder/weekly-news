@@ -154,10 +154,14 @@ jobs:
                 fi
                 # Both ISO (2026-10-16) and Czech (16. 10. 2026)
                 # date representations are valid.
-                local czech_day
+                local czech_day czech_long month_idx
+                local month_names=(ledna února března dubna května června července srpna září října listopadu prosince)
                 czech_day="$(date -d "$day" '+%-d. %-m. %Y')"
+                month_idx=$((10#${day:5:2} - 1))
+                czech_long="$(date -d "$day" '+%-d. ')\${month_names[$month_idx]}\ ${day:0:4}"
                 if ! grep -Fq "**Hodnocený den:** ${day}" "$assembled" &&
-                   ! grep -Fq "**Hodnocený den:** ${czech_day}" "$assembled"; then
+                   ! grep -Fq "**Hodnocený den:** ${czech_day}" "$assembled" &&
+                   ! (grep -F '**Hodnocený den:**' "$assembled" | grep -Fq "$czech_long"); then
                   echo "Daily evaluated date mismatch: ${day}" >&2
                   exit 1
                 fi
